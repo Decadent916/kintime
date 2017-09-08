@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>美食店铺</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/food-store.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/food-store.js" ></script>
+		<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=M6VBZ-JJQKI-4JZGL-5BLMN-QMQST-R4BHC"></script>
+	</head>
+	<body onload="init()">
+		<header></header>
+		
+		<!--蒙板-->
+		<div class="overlay"></div>
+		<!--商家执照-->
+		<div class="food-safe-info">
+			<span class="food-safe-close">X</span>
+			<h3>食品安全监督公示</h3>
+			<h3>商家资质公示</h3>
+			<div class="food-safe-img">
+				<img src="img/foodstore5.jpg" />
+			</div>
+			<div class="food-safe-img">
+				<img src="img/foodstore6.jpg" />
+			</div>
+		</div>
+		<!--地图-->
+		<div id="map-wrapper">
+			<span class="close-btn">X</span>
+			<div id="map1"></div>
+		</div>
+		<!--商家基础信息-->
+		<div class="store-summary container">
+			<div class="summary-left">
+				<h2>
+					<span class="title">韩千炉海鲜自助烤肉（文三店）</span>
+				</h2>
+				<p class="under-title">
+					<span id="geo">西湖区文三路345号（文三路与黄姑山路交叉口肯德基3楼）</span>
+					<i class="map-icon glyphicon glyphicon-map-marker"></i>
+				</p>
+				<p class="under-title">0571-88330057</p>
+			</div>
+			<div class="summary-right">
+				<div class="info">
+					<div>
+						<span class="level"><strong>5</strong>分</span>
+						<span class="rating">
+							<span class="rate-stars" style="width: 100%;"></span>
+						</span>
+					</div>
+					<div>
+						<a href="#" class="tag">自助餐</a>
+					</div>
+				</div>
+				<div class="counts">
+					<div>
+						评价人数：
+						<a href="#" class="rate-count">22779</a>
+					</div>
+					<div class="shop-identity-wrapper">
+						商家资质：
+						<a href="javascript:;" class="shop-identity">查看食品安全档案</a>
+					</div>
+				</div>
+			</div>
+			<i class="book-icon"></i>
+		</div>
+		<!--正在团购-->
+		<div class="store-salelist container">
+			<h3 class="content-title">正在团购</h3>
+			<ul class="onsale-list">
+				<li class="onsale-item">
+					<a href="#" title="单人自助午晚通用/烤肉火锅全天自助2选1" class="item-title">
+						<img src="img/foodstore0.jpg" alt="单人自助午晚通用/烤肉火锅全天自助2选1-韩千炉海鲜自助烤肉（文三店）"/>
+						<span class="title">单人自助午晚通用/烤肉火锅全天自助2选1</span>
+						<span class="type-mark"><i></i></span>
+						<span class="sale">已售113497</span>
+					</a>
+					<span class="item-duedate">
+						<span>截止到 2017.09.12</span>
+					</span>
+					<span class="item-usetime"></span>
+					<span class="item-price">
+						<span>
+							<em class="price">
+								<i class="money">￥</i>
+								<strong>59.9</strong>
+							</em>
+						</span>
+						<span>
+							门店价
+							<del>
+								<i class="money">￥</i>
+								<strong>69</strong>
+							</del>
+							
+						</span>
+					</span>
+					<a href="#" class="item-btn">立即抢购</a>
+				</li>
+				<li class="onsale-item">
+					<a href="#" title="单人自助烤肉火锅，免费WiFi" class="item-title">
+						<img src="img/foodstore1.jpg" alt="单人自助烤肉火锅，免费WiFi"/>
+						<span class="title">单人自助烤肉火锅，免费WiFi</span>
+						<span class="type-mark"><i></i></span>
+						<span class="sale">已售29653</span>
+					</a>
+					<span class="item-duedate">
+						<span>截止到 2017.09.15</span>
+					</span>
+					<span class="item-usetime"></span>
+					<span class="item-price">
+						<span>
+							<em class="price">
+								<i class="money">￥</i>
+								<strong>49.9</strong>
+							</em>
+						</span>
+						<span>
+							门店价
+							<del>
+								<i class="money">￥</i>
+								<strong>59</strong>
+							</del>
+							
+						</span>
+					</span>
+					<a href="#" class="item-btn">立即抢购</a>
+				</li>
+				<li class="onsale-item">
+					<a href="#" title="周一到周五商务餐" class="item-title">
+						<img src="img/foodstore0.jpg" alt="周一到周五商务餐"/>
+						<span class="title">周一到周五商务餐</span>
+						<span class="type-mark"><i></i></span>
+						<span class="sale">已售7572</span>
+					</a>
+					<span class="item-duedate">
+						<span>截止到 2017.09.24</span>
+					</span>
+					<span class="item-usetime"></span>
+					<span class="item-price">
+						<span>
+							<em class="price">
+								<i class="money">￥</i>
+								<strong>28</strong>
+							</em>
+						</span>
+						<span>
+							门店价
+							<del>
+								<i class="money">￥</i>
+								<strong>29</strong>
+							</del>
+							
+						</span>
+					</span>
+					<a href="#" class="item-btn">立即抢购</a>
+				</li>
+			</ul>
+		</div>
+		<!--特色菜-->
+		<div class="meishi-menu container">
+			<h2 class="content-title">特色菜</h2>
+			<div class="menu-items">
+				<table>
+					<tbody>
+						<tr>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+						</tr>
+						<tr>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+						</tr>
+						<tr>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td><a href="javascript:;" class="more">更多》</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="hidden">
+					<tbody>
+						<tr>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+						</tr>
+						<tr>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+						</tr>
+						<tr>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+						</tr>
+						<tr>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+						</tr>
+						<tr>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+						</tr>
+						<tr>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+						</tr>
+						<tr>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+						</tr>
+						<tr>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+						</tr>
+						<tr>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+							<td>菜</td>
+							<td>菜品</td>
+							<td>培根</td>
+							<td>五花肉</td>
+							<td>韩式烤肉</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="menu-pic carousel slide" id="menu-pic-carousel" data-ride="carousel">
+				<div class="carousel-inner">
+			        <div class="item active">
+			        	<span class="pic-item">
+			        		<img src="img/foodstore2.jpg" />
+			        		<span class="cover">菜 </span>
+			        	</span>
+			            <span class="pic-item">
+			        		<img src="img/foodstore2.jpg" />
+			        		<span class="cover">菜 </span>
+			        	</span>
+			        	<span class="pic-item">
+			        		<img src="img/foodstore2.jpg" />
+			        		<span class="cover">菜 </span>
+			        	</span>
+			        	<span class="pic-item">
+			        		<img src="img/foodstore2.jpg" />
+			        		<span class="cover">菜 </span>
+			        	</span>
+			        	<span class="pic-item">
+			        		<img src="img/foodstore2.jpg" />
+			        		<span class="cover">菜 </span>
+			        	</span>
+			        </div>
+			        <div class="item">
+			            <span class="pic-item">
+			        		<img src="img/foodstore3.jpg" />
+			        		<span class="cover">培根  </span>
+			        	</span>
+			            <span class="pic-item">
+			        		<img src="img/foodstore3.jpg" />
+			        		<span class="cover">培根  </span>
+			        	</span>
+			        	<span class="pic-item">
+			        		<img src="img/foodstore3.jpg" />
+			        		<span class="cover">培根  </span>
+			        	</span>
+			        	<span class="pic-item">
+			        		<img src="img/foodstore3.jpg" />
+			        		<span class="cover">培根  </span>
+			        	</span>
+			        	<span class="pic-item">
+			        		<img src="img/foodstore3.jpg" />
+			        		<span class="cover">培根 </span>
+			        	</span>
+			        </div>
+			        <div class="item">
+			            <span class="pic-item">
+			        		<img src="img/foodstore4.jpg" />
+			        		<span class="cover">五花肉   </span>
+			        	</span>
+			            <span class="pic-item">
+			        		<img src="img/foodstore4.jpg" />
+			        		<span class="cover">五花肉   </span>
+			        	</span>
+			        	<span class="pic-item">
+			        		<img src="img/foodstore4.jpg" />
+			        		<span class="cover">五花肉   </span>
+			        	</span>
+			        	<span class="pic-item">
+			        		<img src="img/foodstore4.jpg" />
+			        		<span class="cover">五花肉   </span>
+			        	</span>
+			        	<span class="pic-item">
+			        		<img src="img/foodstore4.jpg" />
+			        		<span class="cover">五花肉  </span>
+			        	</span>
+			        </div>
+			    </div>
+			    <a class="carousel-control-prev carousel-control" href="#menu-pic-carousel" data-slide="prev"></a>
+			    <a class="carousel-control-next carousel-control" href="#menu-pic-carousel" data-slide="next"></a>
+			</div>
+		</div>
+		<!--商家详情-->
+		<div class="shop-info container">
+			<h2 class="content-title">商家详情</h2>
+			<div class="" style="overflow: hidden;">
+				<a href="javascript:;" class="shop-pic">
+					<span class="pic-wrapper">
+						<img src="img/foodstore0.jpg" />
+					</span>
+					<span class="viewall">查看全部 684张 图片</span>
+				</a>
+				<div class="">
+					<div class="field-group">
+						<span class="field-title">营业时间：</span>
+						周一至周日
+						午市 11:00-14:00
+						晚市 17:00-21:00
+					</div>
+					<div class="field-group">
+						<span class="field-title">门店服务：</span>
+						支持WIFI
+						停车位收费标准：停车位请咨询店内
+					</div>
+					<div class="field-group">
+						<span class="field-title">门店介绍：</span>
+						<span class="short-shop-info">
+							韩千炉韩式自助烤肉是入驻杭州地区的一个强力品牌，目前全国已有百余分店。我们以弘扬传统美食文化、引领时尚美食潮流的美好憧憬，坚持精选优级食材集韩式烧烤系列、各地风味小吃系列、中点系列、西点系列、煲仔系列、凉菜系列、广东煲汤、中式炒菜、日式料理、铁板烧、时尚小火锅等200余种菜品，满足不用年龄消费者的需求
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--消费评价-->
+		<div class="user-reviews container">
+			<h2 class="content-title">消费评价</h2>
+			<div class="reviews-list">
+				<ul class="reviews-title">
+					<li class="reviews-title-item">
+						<a href="javascript:;" class="reviews-title-item-link reviews-title-item-link-active">全部</a>
+					</li>
+					<li class="reviews-title-item">
+						<a href="javascript:;" class="reviews-title-item-link">晒图评价</a>
+					</li>
+					<li class="reviews-title-item">
+						<a href="javascript:;" class="reviews-title-item-link">只看低分</a>
+					</li>
+				</ul>
+				<div class="reviews-list-content">
+					<ul class="rate-list">
+						<li class="rate-list-item">
+							<div class="reviews-user-info">
+								<div class="avatar-wrapper">
+									<img src="img/details19.jpg"/>
+								</div>
+								<p class="name-wrapper">
+									<span class="name">曾经的曾经mgj</span>
+									<i class="level-icon level-icon-2" title="等级VIP2"></i>
+								</p>
+							</div>
+							<div class="review-content-wrapper">
+								<div class="star">
+									<div class="rate-status">
+										<span class="rating-con">
+											<span class="rating-stars" style="width: 100%;"></span>
+										</span>
+									</div>
+									<span class="time">2017-08-24</span>
+								</div>
+								<p class="content">来吃好几次了，每次都非常想来，结果来了又不知道该吃些什么。感觉还没吃两口就饱了。我不适合吃自助。哈哈总体来说他家还不错，冰激凌和蛋糕都很好吃</p>
+								<div class="pic-list-wrapper">
+									<a href="javascript:;" class="pic-thumb">
+										<img src="img/details21.jpg" />
+									</a>
+									<a href="javascript:;" class="pic-thumb">
+										<img src="img/details23.jpg" />
+									</a>
+									<a href="javascript:;" class="pic-thumb">
+										<img src="img/details24.jpg" />
+									</a>
+								</div>
+								<div class="pic-view-list-wrapper" style="display: none;">
+									<img src="images/details21.jpg" />
+								</div>
+								<p class="shopname">嗨漾自助美食（星光大道店）</p>
+							</div>
+						</li>
+						<li class="rate-list-item">
+							<div class="reviews-user-info">
+								<div class="avatar-wrapper">
+									<img src="img/details19.jpg"/>
+								</div>
+								<p class="name-wrapper">
+									<span class="name">曾经的曾经mgj</span>
+									<i class="level-icon level-icon-2" title="等级VIP2"></i>
+								</p>
+							</div>
+							<div class="review-content-wrapper">
+								<div class="star">
+									<div class="rate-status">
+										<span class="rating-con">
+											<span class="rating-stars" style="width: 100%;"></span>
+										</span>
+									</div>
+									<span class="time">2017-08-24</span>
+								</div>
+								<p class="content">来吃好几次了，每次都非常想来，结果来了又不知道该吃些什么。感觉还没吃两口就饱了。我不适合吃自助。哈哈总体来说他家还不错，冰激凌和蛋糕都很好吃</p>
+								<div class="pic-list-wrapper">
+									<a href="javascript:;" class="pic-thumb">
+										<img src="img/details21.jpg" />
+									</a>
+									<a href="javascript:;" class="pic-thumb">
+										<img src="img/details23.jpg" />
+									</a>
+									<a href="javascript:;" class="pic-thumb">
+										<img src="img/details24.jpg" />
+									</a>
+								</div>
+								<div class="pic-view-list-wrapper" style="display: none;">
+									<img src="images/details21.jpg" />
+								</div>
+								<p class="shopname">嗨漾自助美食（星光大道店）</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--电梯-->
+		<div class="elevator2 col-lg-1">
+			<a id="elevator2_top"></a>
+		</div>
+		<footer></footer>
+	</body>
+</html>

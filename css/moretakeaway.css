@@ -1,0 +1,212 @@
+a{
+	text-decoration: none;
+	color: #333;
+	font-size: 16px;
+}
+a:hover{
+	text-decoration: none;
+	color: #333;
+}
+.current-city{
+	font-size: 12px;
+	line-height: 32px;
+	margin-left: 6px;
+}
+.change-link{
+	display: inline-block;
+	color: #FFD161;
+	margin-left: 8px;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 32px;
+}
+.change-link:hover{
+	text-decoration: none;
+	color: #FFD161;
+}
+.logo0{
+	margin: 0;
+	padding: 0;
+	margin-top: 16px;
+	height: 67px;
+	font-size: 18px;
+}
+.logo0 a{
+	text-decoration: none;
+	color: #333;
+}
+.logo0 a:hover{
+	text-decoration: none;
+	color: #333;
+}
+
+
+
+/*分类栏*/
+.rest-banner{
+	padding: 18px 20px;
+	background: #fff;
+	margin-top: 15px;
+	position: relative;
+}
+.filter-title{
+	background: url(../img/takeaway0.png) no-repeat;
+	padding-left: 32px;
+	font-size: 14px;
+	position: absolute;
+	left: 0;
+	top: 26px;
+	margin-left: 20px;
+}
+.filter-content{
+	width: 822px;
+	padding-left: 130px;
+	list-style: none;
+	overflow: hidden;
+	margin: 0;
+}
+.f1{
+	float: left;
+	margin: 8px 20px 8px 0;
+	display: list-item;
+	
+}
+.f1 a:hover{
+	color: #ffa735;
+}
+.t-filter-list{
+	display: block;
+	color: #000;
+	font-size: 14px;
+	text-decoration: none;
+}
+.selected a{
+	color: #ffa735;
+}
+
+
+/*商品列表*/
+.rest-list{
+	overflow: hidden;
+	margin-top: 15px;
+	padding: 10px 5px;
+	background: #fff;
+}
+.rest-li{
+	padding: 20px 16px 0;
+	background: #fff;
+}
+.hover{
+	background: #F5F5F5;
+}
+.rest-atag{
+	display: block;
+	text-decoration: none;
+}
+.preview{
+	padding: 0;
+	height: 156px;
+	border: 1px solid #eaeaea;
+	text-align: center;
+	line-height: 152px;
+	position: relative;
+}
+.preview img{
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+}
+.name{
+	margin-top: 10px;
+}
+.name span{
+	line-height: 20px;
+	font-size: 16px;
+	color: #313131;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+}
+.star-rating{
+	background-image: url(../img/rate1.png);
+	display: inline-block;
+	width: 72px;
+	height: 12px;
+	line-height: 12px;
+	overflow: hidden;
+	background-repeat: repeat-x;
+}
+.star-score{
+	background-image: url(../img/rate2.png);
+	display: inline-block;
+	width: 72px;
+	height: 12px;
+	line-height: 12px;
+	overflow: hidden;
+	background-repeat: repeat-x;
+}
+.score-num{
+	color: #707070;
+	margin-left: 5px;
+	font-size: 12px;
+}
+.price{
+	color: #707070;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.start-price{
+	display: inline-block;
+	max-width: 62px;
+	margin-right: 15px;
+}
+.send-price{
+	display: inline-block;
+	max-width: 75px;
+	margin-right: 15px;
+}
+.send-time{
+	display: inline-block;
+	max-width: 60px;
+}
+ .favorite,.un-favorite{
+	width: 38px;
+	height: 38px;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+}
+.un-favorite{
+	display: none;
+}
+.un-favorite .fav-icon{
+	background-image: url(../img/public3.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	background-position: -409px -311px;
+	width: 38px;
+	height: 38px;
+}
+.hover .un-favorite{
+	display: block;
+}
+.favorite .fav-icon{
+	background: url(../img/public4.png) no-repeat;
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+}
+
+
+/*点击加在更多*/
+.isloading{
+	border-top: 1px solid #dadada;
+	cursor: pointer;
+	padding: 15px 0;
+	text-align: center;
+	background: #fff;
+	font-size: 14px;
+	color: #707070;
+	margin-bottom: 20px;
+}

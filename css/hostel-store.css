@@ -1,0 +1,880 @@
+a{
+	color: #000;
+	text-decoration: none;
+}
+a:hover{
+	color: #000;
+	text-decoration: none;
+}
+ul,ol{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+body{
+	font-style: normal;
+}
+/*图片展*/
+.grid-container{
+	margin-top: 10px;
+	padding: 0;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+.imgbox{
+	position: relative;
+	float: left;
+	height: 318px;
+	cursor: pointer;
+	padding: 0;
+	padding-right: 18px;
+}
+.imgbox img{
+	width: 100%;
+	height: 318px;
+}
+.more-img-link{
+	display: block;
+	position: relative;
+	top: -30px;
+	height: 30px;
+	width: 100%;
+	color: #fff;
+	line-height: 30px;
+	padding-left: 10px;
+}
+.more-img-link:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+.hostel-content{
+	float: left;
+	height: 318px;
+	overflow: hidden;
+	padding: 0;
+}
+.hostel-title{
+	position: relative;
+	padding: 0 0 4px 10px;
+}
+.hostel-name{
+	width: 50%;
+	font-size: 24px;
+	color: #333;
+	display: inline;
+}
+.hostel-address{
+	color: #666;
+	line-height: 30px;
+	height: 30px;
+}
+#geo{
+	max-width: 50%;
+	display: inline-block;
+	height: 20px;
+	font-size: 13px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.map-icon{
+	margin-left: 5px;
+	cursor: pointer;
+	color: #2bb8aa;
+}
+.feature{
+	height: 28px;
+	margin-top: 8px;
+}
+.wifi{
+	display: block;
+	float: left;
+	border: 1px solid #ddd;
+	border-radius: 1px;
+	margin-right: 5px;
+	width: 24px;
+	height: 24px;
+	background-image: url(../img/public12.png);
+	background-repeat: no-repeat;
+	background-position: 0 -273px;
+}
+.start-price{
+	float: right;
+	color: #999;
+	font-size: 14px;
+}
+.start-price strong{
+	font-size: 32px;
+	color: #f76120;
+}
+.money{
+	font-style: normal;
+}
+.content-box{
+	float: right;
+	margin-right: 25px;
+	text-align: center;
+}
+.content-box .avg-comment{
+	font-size: 14px;
+	color: #999;
+	height: 34px;
+	line-height: 34px;
+	margin: 0;
+}
+.content-box .avg-comment em{
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	color: #f76120;
+}
+.content-box .content-num{
+	font-size: 12px;
+	color: #666;
+	margin: 0;
+}
+.hostel-imglist{
+	width: 100%;
+	overflow: hidden;
+}
+.imglist-item{
+	float: left;
+	height: 108px;
+	margin: 2px 0 0 2px;
+	cursor: pointer;
+	width: 24.4%;
+}
+.imglist-item img{
+	width: 100%;
+	height: 108px;
+}
+/*标签*/
+.scrollnav{
+	padding: 0;
+}
+.scrollnav-tab{
+	border: 1px solid #ddd;
+	background-color: #f6f6f6;
+	height: 41px;
+	line-height: 41px;
+}
+.scrollnav-tab li{
+	float: left;
+	width: 12%;
+	text-align: center;
+	border-right: 1px solid #eee;
+	cursor: pointer;
+}
+.current{
+	background-color: #2bb8aa;
+	color: #fff;
+}
+/*房间列表*/
+.hostel-deallist{
+	padding: 15px 15px 0;
+	border: 1px solid #ddd;
+	border-top: 0;
+}
+.date-picker{
+	margin-bottom: 15px;
+	line-height: 30px;
+	overflow: hidden;
+}
+.hostel-field-group-checkin,.hostel-field-group-checkout{
+	float: left;
+	padding: 0 20px;
+	position: relative;
+	margin-bottom: 8px;
+}
+.hostel-field-group-checkin label,.hostel-field-group-checkout label{
+	left: 0;
+	margin-right: 10px;
+	font-size: 14px;
+	text-align: right;
+	color: #333;
+}
+#checkin-date,#checkout-date{
+	width: 80%;
+	height: 32px;
+	line-height: 20px;
+	padding: 5px 10px;
+	color: #666;
+	border: 1px solid #ddd;
+	outline: 0;
+	cursor: pointer;
+}
+.checkin-weekinfo,.checkout-weekinfo{
+	position: absolute;
+	top: 0;
+	right: 50px;
+	font-size: 12px;
+}
+.calendar{
+	position: absolute;
+	top: 8px;
+	right: 30px;
+	color: #2bb8aa;
+}
+.time-count{
+	margin-right: 15px;
+}
+.changetime{
+	width: 10%;
+	height: 32px;
+	padding: 7px 20px 6px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: .1em;
+	text-align: center;
+	border: 1px solid #008177;
+	color: #fff;
+	background-color: #2bb8aa;
+}
+.deal-table-header{
+	height: 36px;
+	line-height: 36px;
+	background-color: #eee;
+	padding: 0 15px;
+}
+.deal-table-header li{
+	float: left;
+}
+.deal-table-info{
+	width: 23%;
+}
+.deal-table-breakfast{
+	width: 12%;
+}
+.deal-table-wifi{
+	width: 12%;
+}
+.deal-table-sales{
+	width: 9%;
+}
+.deal-table-condition{
+	width: 20%;
+}
+.deal-table-price{
+	width: 12%;
+}
+.deal-table-op{
+	width: 12%;
+	text-align: center;
+}
+.deal-table-body .deal-table-item:last-child{
+	border-bottom: none;
+}
+.deal-table-item{
+	width: 100%;
+	float: left;
+	padding: 15px;
+	border-bottom: 1px dotted #ccc;
+	position: relative;
+}
+.deal-table-item-content{
+	float: left;
+}
+.deal-table-info a{
+	color: #666;
+	font-size: 14px;
+	font-weight: 700;
+}
+.deal-table-info a:hover{
+	text-decoration: underline;
+}
+.refund{
+	width: 18px;
+	height: 16px;
+	margin-left: 5px;
+	vertical-align: text-bottom;
+	background-image: url(../img/public12.png);
+	background-repeat: no-repeat;
+	background-position: 0 -137px;
+	display: inline-block;
+}
+.gift{
+	width: 18px;
+	height: 16px;
+	margin-left: 5px;
+	vertical-align: text-bottom;
+	background-image: url(../img/public12.png);
+	background-repeat: no-repeat;
+	background-position: 0 -46px;
+	display: inline-block;
+}
+.conditions{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding-right: 20px;
+}
+.deal-price{
+	font-size: 25px;
+	font-weight: 700;
+	color: #f76120;
+	vertical-align: top;
+	font-style: normal;
+}
+.deal-table-op .buy-btn{
+	 float: right;
+	 color: #fff;
+	 padding: 3px 20px;
+	 background-color: #2db3a6;
+	 border-radius: 4px;
+	 border: 1px solid #008177;
+}
+/*交通位置*/
+.business-location {
+	padding: 0;
+}
+
+.business-info-title {
+	margin: 0;
+	padding: 20px 0 10px;
+	border-bottom: 2px solid #777;
+	color: #333;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.business-location-wrapper {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #eee;
+	color: #333;
+	overflow: hidden;
+	font-size: 0;
+}
+
+.business-location-wrapper .left-content {
+	width: 50%;
+	min-height: 300px;
+	display: inline-block;
+}
+
+.business-location-wrapper .right-content {
+	width: 50%;
+	min-height: 300px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.business-location-list {
+	padding: 10px 15px 0;
+}
+
+.business-location-list-info {
+	border: none;
+	border-bottom: 1px solid #eee;
+}
+
+.business-location-list-info-title {
+	height: 36px;
+	position: relative;
+	padding-right: 15px;
+	line-height: 36px;
+	font-size: 15px;
+}
+
+.business-location-list-info-title a {
+	color: #2bb8aa;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.business-location-list-info-body {
+	min-height: 160px;
+	display: none;
+}
+
+.business-location-list-info-title-clicked .business-location-list-info-body {
+	display: block;
+}
+
+.business-address,
+.business-phone {
+	padding: 0 10px 0 50px;
+	line-height: 20px;
+	color: #666;
+	position: relative;
+	font-size: 15px;
+}
+
+.title-label {
+	color: #333;
+	position: absolute;
+	top: 0;
+	width: 50px;
+	font-size: 15px;
+	left: 0;
+	text-align: left;
+	display: inline-block;
+}
+
+/*酒店信息*/
+.hostel-info{
+	padding: 0;
+}
+.hostelinfo-content{
+	padding: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #666;
+	border-bottom: 1px dotted #eee;
+	overflow: hidden;
+}
+.hostelinfo-title{
+	width: 15%;
+	font-weight: 700;
+	margin-right: 10px;
+	float: left;
+}
+.hostelinfo-content dd{
+	width: 84%;
+	float: left;
+}
+.hostelinfo-content-list{
+	padding:8px 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #666;
+	border-bottom: 1px dotted #eee;
+	overflow: hidden;
+}
+/*住客点评*/
+.user-reviews{
+	margin-bottom: 20px;
+	padding: 0;
+}
+.reviews-score{
+	margin-top: 15px;
+}
+.rating-area{
+	width: 49.7%;
+	height: 115px;
+	padding-top: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: top;
+	display: inline-block;
+}
+.count-detail{
+	text-align: center;
+	border-left: 1px solid #eee;
+}
+.total-group{
+	margin-bottom: 10px;
+	text-align: center;
+}
+.total-score{
+	margin: 0;
+	font-size: 16px;
+	font-weight: 700;
+}
+.total-count{
+	margin: 0;
+}
+.ave-score{
+	padding: 0 3px;
+	color: #f76120;
+	font-size: 32px;
+	line-height: 40px;
+}
+.rating-con{
+	margin: 0 5px;
+	text-align: left;
+	width: 60px;
+	height: 12px;
+	line-height: 12px;
+	background-image: url(../img/rate1.png);
+	display: inline-block;
+	overflow: hidden;
+	background-repeat: repeat-x;
+}
+.rating-stars{
+	display: inline-block;
+	height: 12px;
+	line-height: 12px;
+	overflow: hidden;
+	background-image: url(../img/rate2.png);
+	background-repeat: repeat-x;
+	width: 82%;
+}
+.total-count strong{
+	color: #f76120;
+}
+.count-wrapper{
+	text-align: left;
+	display: inline-block;
+}
+.count-group{
+	line-height: 1;
+	color: #666;
+}
+.score{
+	color: #999;
+}
+.percent-box{
+	width: 100px;
+	height: 12px;
+	margin: 0 7px;
+	color: #666;
+	background-color: #ffebd7;
+	text-align: left;
+	display: inline-block;
+}
+.precent{
+	height: 12px;
+	background: #FC9E58;
+	vertical-align: top;
+	display: inline-block;
+}
+.reviews-title{
+	background: #f9f9f9;
+	margin: 10px 0;
+	padding: 0;
+}
+.reviews-title-item{
+	width: 15%;
+	line-height: 32px;
+	list-style: none;
+	display: inline-block;
+	font-size: 12px;
+	margin-left: -5px;
+}
+.reviews-title-item-link{
+	text-decoration: none;
+	display: block;
+	border-right: solid 1px #eee;
+	width: 100%;
+	text-align: center;
+	color: #333;
+}
+.reviews-title-item-link-active,.reviews-title-item-link:hover{
+	background: #eee;
+	text-decoration: none;
+	color: #333;
+}
+.rate-list{
+	padding: 0;
+}
+.rate-list-item{
+	border-bottom: 1px dotted #ddd;
+	padding: 20px 10px 10px;
+	color: #222;
+	list-style: none;
+	font-size: 12px;
+	overflow: hidden;
+}
+.reviews-user-info{
+	margin-right: 10px;
+	width: 15%;
+	float: left;
+	text-align: center;
+}
+.avatar-wrapper{
+	height: 80px;
+	vertical-align: top;
+}
+.avatar-wrapper img{
+	width: 80px;
+	height: 80px;
+	border-radius: 4px;
+}
+.name-wrapper{
+	margin: 8px 0 5px;
+}
+.name-wrapper .name{
+	width: 100%;
+	display: inline-block;
+	color: #666;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.level-icon{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	vertical-align: bottom;
+	overflow: hidden;
+	background-image: url(../img/details20.png);
+	background-repeat: no-repeat;
+}
+.level-icon-0{
+	background-position: 0 -119px;
+}
+.level-icon-1{
+	background-position: 0 -136px;
+}
+.level-icon-2{
+	background-position: 0 -153px;
+}
+.level-icon-3{
+	background-position: 0 -170px;
+}
+.level-icon-4{
+	background-position: 0 -187px;
+}
+.level-icon-5{
+	background-position: 0 -204px;
+}
+.level-icon-6{
+	background-position: 0 -221px;
+}
+.review-content-wrapper{
+	overflow: hidden;
+}
+.review-content-wrapper .star{
+	margin-bottom: 10px;
+	color: #999;
+	line-height: 18px;
+}
+.rate-status{
+	float: left;
+	font-style: normal;
+}
+.review-content-wrapper .time{
+	color: #999;
+	margin-left: 10px;
+	font-size: 10px;
+}
+.review-content-wrapper .content{
+	margin: 10px 0;
+	word-break: break-all;
+	font-size: 14px;
+}
+.pic-thumb{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	background: url(../img/details21.jpg);
+	text-decoration: none;
+	margin-right: 10px;
+}
+.pic-thumb img{
+	min-height: 100px;
+	min-width: 100px;
+}
+.pic-thumb-current,.pic-thumb:hover{
+	border: 2px solid #f76120;
+	width: 96px;
+	height: 96px;
+}
+.pic-view-list-wrapper{
+	min-height: 250px;
+	text-align: center;
+	background: url(../img/details22.png);
+	margin-top: 10px;
+	width: 500px;
+}
+.pic-view-list-wrapper img{
+	margin: 0 auto;
+	vertical-align: top;
+	max-width: 100%;
+}
+.shopname{
+	color: #999;
+	margin: 10px 0;
+}
+/*电梯*/
+.elevator2{
+	position: fixed;
+	right: 15px;
+	bottom: 20px;
+	padding: 0;
+	display: none;
+}
+#elevator2_top{
+	display: block;
+	width: 40px;
+	height: 36px;
+	border-radius: 2px;
+	background: url(../img/elevator2.png) 8px 6px no-repeat;
+	background-color: #444;
+	background-color: rgba(0,0,0,.6);
+}
+#elevator2_top:hover{
+	background-color: rgba(0,0,0,.8);
+}
+/*蒙板*/
+.overlay{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	z-index: 101;
+	opacity: .2;
+	visibility: hidden;
+}
+/*地图*/
+#map-wrapper{
+	position: fixed;
+	width: 50%;
+	height: 500px;
+	top: 25%;
+	left: 25%;
+	z-index: 102;
+	visibility: hidden;
+}
+#map1{
+	height: 100%;
+}
+.close-btn{
+	width: 25px;
+	height: 25px;
+	display: block;
+	background: #fff;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	opacity: .7;
+}
+.close-btn:hover{
+	opacity: 1;
+}
+/*日期选择器*/
+.date-selector-in{
+	position: absolute;
+	z-index: 3;
+	width: 230px;
+	border: 1px solid #f9f9f9;
+	border-bottom-color: #ececec;
+	border-top: none;
+	background-color: #fff;
+	text-align: center;
+	box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+	top: 540px;
+	left: 443.5px;
+	display: none;
+}
+.date-selector-out{
+	position: absolute;
+	z-index: 3;
+	width: 230px;
+	border: 1px solid #f9f9f9;
+	border-bottom-color: #ececec;
+	border-top: none;
+	background-color: #fff;
+	text-align: center;
+	box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+	top: 540px;
+	left: 718px;
+	display: none;
+}
+.date-selector-content{
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	background: #fff;
+	outline: #18bbab solid 1px;
+}
+.date-selector-table{
+	width: 100%;
+	margin: 0 0px 10px;
+	font-size: 12px;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.cal-header{
+	height: 45px;
+	font-size: 14px;
+	color: #fff;
+	background-color: #18bbab;
+}
+.date-selector-content th{
+	text-align: center;
+}
+.cal-header-wrapper{
+	position: relative;
+	width: 100%;
+}
+.cal-header-wrapper a{
+	position: absolute;
+	display: block;
+	border: none;
+	color: #fff;
+}
+.cal-nav-pre-m{
+	top: -5px;
+	left: 1em;
+	width: 2.5em;
+	height: 2.5em;
+	line-height: 2.5em;
+	font-size: 12px;
+	border-radius: 50%;
+	background-color: #18bbab;
+	transition-duration:.1s ;
+}
+.cal-nav-pre-m:hover{
+	background-color: #15a496;
+}
+.date-selector-changeyear{
+	width: 42px;
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	text-align: center;
+}
+.date-selector-changemonth{
+	width: 22px;
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	text-align: center;
+}
+.cal-nav-next-m{
+	top: -5px;
+	right: 1em;
+	width: 2.5em;
+	height: 2.5em;
+	line-height: 2.5em;
+	font-size: 12px;
+	border-radius: 50%;
+	background-color: #18bbab;
+	transition-duration:.1s ;
+}
+.cal-nav-next-m:hover{
+	background-color: #15a496;
+}
+.date-selector-weekday{
+	color: #2bb8aa;
+}
+.date-selector-weekday th{
+	padding: .5em .25em;
+}
+.date-selector-table td{
+	padding: .5em 0;
+	border: none;
+	color: #d3d3d2;
+}
+.cal-day-pre-month,.cal-day-next-month{
+	visibility: hidden;
+}
+.date-selector-table .date-selector-able{
+	color: #333;
+	cursor: pointer;
+	border-radius: 50%;
+	transition-duration: .6s;
+}
+.date-selector-table .date-selector-able:hover{
+	color: #fff;
+	background-color: #18bbab;
+}
+.date-selector-able.date-selector-today{
+	font-weight: 700;
+	color: #f76120;
+}
+.date-selector-table td.date-selector-able.date-selector-select{
+	color: #fff;
+	background-color: #18bbab;
+}

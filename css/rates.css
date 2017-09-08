@@ -1,0 +1,20 @@
+.rates-empty{
+	margin: 160px auto 0;
+	padding: 10px 0;
+	overflow: hidden;
+	width: 500px;
+}
+.empty-icon{
+	float: left;
+	height: 106px;
+	width: 87px;
+	background: url(../img/rates0.jpg) no-repeat;
+}
+.empty-talk{
+	float: left;
+	margin: 42px 10px;
+}
+.empty-talk a{
+	color: #2bb8aa;
+	text-decoration: none;
+}

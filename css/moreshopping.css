@@ -1,0 +1,669 @@
+*{
+	margin:0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	text-decoration: none;
+	color: #000;
+}
+ul,ol{
+	list-style: none;
+}
+body{
+	background-color: #F5F5F5;
+}
+.main-nav{
+	height: 36px;
+	line-height: 36px;
+	background-color: #ff0036;
+}
+.innner0{
+	position: relative;
+}
+.category-type{
+	height: 36px;
+	background-color: #ff0036;
+	line-height: 36px;
+	color: #fff;
+	position: absolute;
+	cursor: pointer;
+}
+.category-type:hover{
+	background-color: #e22127;
+}
+.category-type-text{
+	display: inline-block;
+	font-size: 16px;
+	margin-left: 8px;
+	font-weight: 700;
+}
+.category-type-tab{
+	position: absolute;
+	top: 36px;
+	padding: 0;
+	z-index: 11;
+	display: none;
+}
+.category-type-nav{
+	background-color: rgba(238,238,238,.95);
+	width: 100%;
+}
+.nav-item{
+	height: 36px;
+	line-height: 36px;
+	color: #000;
+	font-size: 14px;
+}
+.icon{
+	display: inline-block;
+	opacity: .5;
+	margin-left: 14px;
+	margin-right: 10px;
+	height: 20px;
+	line-height: 36px;
+	font-size: 16px;
+}
+.selected{
+	background-color: #fff;
+}
+.nav-item0.selected a{
+	color: #e54077;
+}
+.nav-item1.selected a{
+	color: #427def;
+}
+.nav-item2.selected a{
+	color: #6347ed;
+}
+.nav-item3.selected a{
+	color: #e54077;
+}
+.nav-item4.selected a{
+	color: #6347ed;
+}
+.nav-item5.selected a{
+	color: #427def;
+}
+.nav-item6.selected a{
+	color: #fa5c5c;
+}
+
+/*轮播*/
+#myCarousel{
+	z-index: 0;
+}
+
+/*楼层*/
+.floor-line-con{
+	margin-top: 30px;
+	height: 530px;
+	padding: 0;
+}
+.color-mark{
+	display: inline-block;
+	width: 5px;
+	height: 20px;
+	vertical-align: top;
+}
+.floor-name{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+	color: #000;
+	line-height: 18px;
+	height: 18px;
+	margin-left: 10px;
+}
+.floor-sub-name{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	color: #000;
+	line-height: 24px;
+	height: 18px;
+	margin-left: 10px;
+}
+.line-body{
+	height: 500px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+/*楼层左侧*/
+
+.line-body-left{
+	position: relative;
+	padding: 0;
+}
+.line-body-left img{
+	display: block;
+	width: 100%;
+	height: 360px;
+	transition: opacity .3s ease-out;
+	-webkit-transition: opacity .3s ease-out;
+}
+.line-body-left:hover img{
+	opacity: .7;
+}
+.line-body-left-acttitle{
+	position: absolute;
+	bottom: 140px;
+	height: 30px;
+	width: 100%;
+	background-color: rgba(255,255,255,.8);
+	overflow: hidden;
+}
+.slide-item{
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.title-con{
+	height: 140px;
+	width: 100%;
+	overflow: hidden;
+	color: #fff;
+	position: relative;
+}
+.title-con .title{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	font-weight: 700;
+	font-size: 22px;
+}
+.title-con .sub-title{
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+}
+.decoration{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	left: -25px;
+	bottom: 0;
+	background-image: url(../img/moreshopping1.png);
+}
+
+/*楼层中侧*/
+.line-body-middle{
+	padding: 0;
+}
+.line-body-middle-grid{
+	position: relative;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+	border-right: 1px solid #f5f5f5;
+	background-color: #fff;
+	padding: 25px 0 0 25px;
+	height: 250px;
+}
+.line-body-middle-grid .title{
+	font-size: 18px;
+	line-height: 24px;
+	height: 24px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 10;
+}
+.line-body-middle-grid .sub-title{
+	font-size: 14px;
+	line-height: 18px;
+	height: 18px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 10;
+}
+.line-body-middle-grid img{
+	width: 154px;
+	height: 154px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	transition: right .3s;
+	z-index: 1;
+}
+.line-body-middle-grid:hover img{
+	right: 5px;
+}
+
+/*楼层右侧*/
+.line-body-right{
+	padding: 0;
+}
+.line-body-right-grid{
+	position: relative;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+	border-right: 1px solid #f5f5f5;
+	background-color: #fff;
+	padding: 25px 0 0 25px;
+	height: 166px;
+}
+.line-body-right-grid .title{
+	font-size: 18px;
+	line-height: 24px;
+	height: 24px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 10;
+}
+.line-body-right-grid .sub-title{
+	font-size: 14px;
+	line-height: 18px;
+	height: 18px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 10;
+}
+.line-body-right-grid img{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	transition: right .3s;
+	z-index: 1;
+}
+.line-body-right-grid:hover img{
+	right: 5px;
+}
+
+
+/*个性化楼层*/
+/*美丽人生*/
+.color-type-pink .color-mark{
+	background-color: #EA5F8D;
+}
+.color-type-pink .line-body-left-acttitle:hover{
+	color: #EA5F8D;
+}
+.color-type-pink .title-con{
+	background-color: #EA5F8D;
+}
+.color-type-pink .line-body-middle-grid .sub-title{
+	color: #EA5F8D;
+}
+.color-type-pink .line-body-right-grid .sub-title{
+	color: #EA5F8D;
+}
+/*潮电酷玩*/
+.color-type-blue .color-mark{
+	background-color: #0AA6E8;
+}
+.color-type-blue .line-body-left-acttitle:hover{
+	color: #0AA6E8;
+}
+.color-type-blue .title-con{
+	background-color: #0AA6E8;
+}
+.color-type-blue .line-body-middle-grid .sub-title{
+	color: #0AA6E8;
+}
+.color-type-blue .line-body-right-grid .sub-title{
+	color: #0AA6E8;
+}
+/*居家生活*/
+.color-type-green .color-mark{
+	background-color: #64C333;
+}
+.color-type-green .line-body-left-acttitle:hover{
+	color: #64C333;
+}
+.color-type-green .title-con{
+	background-color: #64C333;
+}
+.color-type-green .line-body-middle-grid .sub-title{
+	color: #64C333;
+}
+.color-type-green .line-body-right-grid .sub-title{
+	color: #64C333;
+}
+/*打造爱巢*/
+.color-type-red .color-mark{
+	background-color: #F15453;
+}
+.color-type-red .line-body-left-acttitle:hover{
+	color: #F15453;
+}
+.color-type-red .title-con{
+	background-color: #F15453;
+}
+.color-type-red .line-body-middle-grid .sub-title{
+	color: #F15453;
+}
+.color-type-red .line-body-right-grid .sub-title{
+	color: #F15453;
+}
+/*户外出行*/
+.color-type-cyan .color-mark{
+	background-color: #19C8A9;
+}
+.color-type-cyan .line-body-left-acttitle:hover{
+	color: #19C8A9;
+}
+.color-type-cyan .title-con{
+	background-color: #19C8A9;
+}
+.color-type-cyan .line-body-middle-grid .sub-title{
+	color: #19C8A9;
+}
+.color-type-cyan .line-body-right-grid .sub-title{
+	color: #19C8A9;
+}
+/*亲子时光*/
+.color-type-orange .color-mark{
+	background-color: #F7A945;
+}
+.color-type-orange .line-body-left-acttitle:hover{
+	color: #F7A945;
+}
+.color-type-orange .title-con{
+	background-color: #F7A945;
+}
+.color-type-orange .line-body-middle-grid .sub-title{
+	color: #F7A945;
+}
+.color-type-orange .line-body-right-grid .sub-title{
+	color: #F7A945;
+}
+
+/*猜你喜欢*/
+.wonderful-con{
+	padding: 0;
+	margin-top: 30px;
+}
+.wonderful-title{
+	color: #666;
+	text-align: center;
+	height: 43px;
+	font-weight: 100;
+}
+.title-ctn{
+	position: relative;
+	font-size: 18px;
+	line-height: 20px;
+}
+.title-ctn:before,.title-ctn:after{
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 1px;
+	background-color: #979797;
+	top: 12px;
+}
+.title-ctn:before{
+	left: -38px;
+}
+.title-ctn:after{
+	right: -38px;
+}
+.title-ctn .icon{
+	position: relative;
+	top: 4px;
+	margin-right: 4px;
+	font-size: 20px;
+	color: #ff0036;
+	margin-left: 0;
+}
+
+.wonderful-card-item{
+	display: block;
+	position: relative;
+	background-color: #fff;
+	overflow: hidden;
+	margin-bottom: 7px;
+	padding: 0;
+	border-radius: 4px;
+	border: 1px solid #fff;
+}
+.wonderful-card-item .item-pic{
+	display: block;
+	width: 100%;
+	/*height: 289px;*/
+	overflow: hidden;
+	transition: opacity .3s ease-out;
+}
+.wonderful-card-item:hover{
+	border: #ff0036 solid 1px;
+}
+.wonderful-card-item:hover .item-pic{
+	opacity: .7;
+}
+.wonderful-card-item .item-pic img{
+	display: block;
+	width: 100%;
+}
+.wonderful-card-item .item-info{
+	display: block;
+	padding: 14px 12px 8px;
+	text-align: left;
+}
+.wonderful-card-item .item-info .item-desc{
+	display: block;
+	height: 34px;
+	line-height: 14px;
+	overflow: hidden;
+}
+.wonderful-card-item .item-desc .item-name{
+	font-size: 13px;
+	line-height: 18px;
+	color: #666;
+	font-style: normal;
+}
+.wonderful-card-item .item-info .item-detail{
+	display: block;
+	position: relative;
+	height: 33px;
+	line-height: 22px;
+	margin-top: 2px;
+}
+.wonderful-card-item .item-info .item-price{
+	line-height: 32px;
+	color: #ff0036;
+}
+.wonderful-card-item .item-info .item-price .money{
+	font-size: 14px;
+	font-style: normal;
+}
+.wonderful-card-item .item-info .item-price .price-int{
+	font-size: 16px;
+}
+.wonderful-card-item .item-info .item-price .price-decimal{
+	font-size: 14px;
+}
+/*猜你喜欢结束标签*/
+.wonderful-end{
+	position: relative;
+	background: url(../img/moreshopping12.png) no-repeat;
+	text-align: center;
+	height: 55px;
+	margin: 0 auto;
+	background-size: cover;
+	padding: 0;
+	top: 1px;
+	float: none;
+}
+
+
+/*固定顶部搜索栏*/
+.fix-search{
+	padding: 0;
+	background: #e22127;
+	overflow: hidden;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 1000;
+	top: -50px;
+	transition: top .3s ease-out;
+	opacity: .95;
+}
+.show{
+	top: 0;
+}
+.fix-search-container{
+	padding: 0;
+}
+.fix-search-logo{
+	margin-top: 12px;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	padding: 0;
+}
+.fix-search-container .search{
+	padding: 0;
+	padding-top: 12px;
+	height: 30px;
+}
+.fix-search-container .search button{
+	background-color: #FF0036;
+	border: 0;
+	font-size: 16px;
+	color: #fff;
+	overflow: hidden;
+	letter-spacing: 4px;
+}
+/*侧边固定栏*/
+.right-fix{
+	width: 35px;
+	color: #fff;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000;
+}
+.right-fix-cart{
+	margin-bottom: 8px;
+	height: 100px;
+	position: relative;
+	width: 35px;
+	cursor: pointer;
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #444;
+	background-color: #000;
+}
+.cart-logo{
+	top: 10px;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background-image: url(../img/moreshopping13.png);
+}
+.cart-text{
+	display: block;
+	position: absolute;
+	left: 7px;
+	top: 40px;
+	width: 20px;
+	height: 50px;
+	line-height: 16px;
+	overflow: hidden;
+	padding: 0;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+}
+
+.right-fix-tab-hover .cart-logo{
+	background-image: url(../img/moreshopping14.png);
+}
+.right-fix-brand,.right-fix-fav,.right-fix-see{
+	position: relative;
+	top: 0px;
+	margin: 8px 0;
+	left: 0;
+	width: 35px;
+	height: 35px;
+	background-color: #000;
+	cursor: pointer;
+}
+.brand-logo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 35px;
+	height: 35px;
+	background-image: url(../img/moreshopping17.png);
+}
+.fav-logo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 35px;
+	height: 35px;
+	background-image: url(../img/moreshopping15.png);
+}
+.see-logo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 35px;
+	height: 35px;
+	background-image: url(../img/moreshopping16.png);
+}
+.right-fix-tab-tip{
+	position: absolute;
+	top: -1px;
+	width: 90px;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	background-color: #494949;
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+	right: 70px;
+	text-align: center;
+	opacity: 0;
+}
+.right-fix-tab-tip-arr{
+	top: 10px;
+	right: -8px;
+	color: #494949;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 16px;
+	text-align: center;
+}
+.right-fix-tab-hover{
+	background-color: #FF0036;
+}
+
+/*电梯*/
+.elevator2{
+	position: fixed;
+	right: 15px;
+	bottom: 20px;
+	padding: 0;
+	display: none;
+}
+#elevator2_top{
+	display: block;
+	width: 40px;
+	height: 36px;
+	border-radius: 2px;
+	background: url(../img/elevator2.png) 8px 6px no-repeat;
+	background-color: #444;
+	background-color: rgba(0,0,0,.6);
+}
+#elevator2_top:hover{
+	background-color: rgba(0,0,0,.8);
+}

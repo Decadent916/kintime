@@ -1,0 +1,12 @@
+.card-empty{
+	margin: 160px auto 0;
+	padding: 10px 0;
+	overflow: hidden;
+	width: 500px;
+}
+.table th{
+	text-align: center;
+}
+.table td{
+	text-align: center;
+}

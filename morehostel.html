@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>更多酒店 | Kintime</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/morehostel.css" />
+		<link rel="stylesheet" href="css/more_public.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/morepublic.js"></script>
+		<script type="text/javascript" src="js/morehostel.js" ></script>
+		<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=M6VBZ-JJQKI-4JZGL-5BLMN-QMQST-R4BHC"></script>
+		
+	</head>
+
+	<body onload="init()">
+		<header></header>
+
+		<div class="container">
+			<!--分类栏-->
+			<div class="filter">
+				<div class="filter-category">
+					<div class="filter-label-list" style="border: none;">
+						<div class="filter-label">类型：</div>
+						<ul class="filter-list">
+							<li class="item current">
+								<a href="">不限</a>
+							</li>
+							<li class="item">
+								<a href="">经济型酒店</a>
+							</li>
+							<li class="item">
+								<a href="">主题酒店</a>
+							</li>
+							<li class="item">
+								<a href="">商务酒店</a>
+							</li>
+							<li class="item">
+								<a href="">公寓</a>
+							</li>
+							<li class="item">
+								<a href="">豪华酒店</a>
+							</li>
+							<li class="item">
+								<a href="">客栈</a>
+							</li>
+							<li class="item">
+								<a href="">青年旅社</a>
+							</li>
+							<li class="item">
+								<a href="">度假酒店</a>
+							</li>
+							<li class="item">
+								<a href="">别墅</a>
+							</li>
+							<li class="item">
+								<a href="">农家院</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="filter-geo">
+					<div class="filter-label-list">
+						<div class="filter-label">区域：</div>
+						<ul class="filter-list">
+							<li class="item current">
+								<a href="">全部</a>
+							</li>
+							<li class="item">
+								<a href="">地铁附近</a>
+							</li>
+							<li class="item">
+								<a href="">西湖区</a>
+							</li>
+							<li class="item">
+								<a href="">拱墅区</a>
+							</li>
+							<li class="item">
+								<a href="">萧山区</a>
+							</li>
+							<li class="item">
+								<a href="">江干区</a>
+							</li>
+							<li class="item">
+								<a href="">滨江区</a>
+							</li>
+							<li class="item">
+								<a href="">余杭区</a>
+							</li>
+							<li class="item">
+								<a href="">上城区</a>
+							</li>
+							<li class="item">
+								<a href="">临安市</a>
+							</li>
+							<li class="item">
+								<a href="">富阳区</a>
+							</li>
+							<li class="item">
+								<a href="">下城区</a>
+							</li>
+							<li class="item">
+								<a href="">桐庐县</a>
+							</li>
+							<li class="item">
+								<a href="">建德市</a>
+							</li>
+							<li class="item">
+								<a href="">淳安县</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="filter-tit">
+					<div class="filter-label-list">
+						<div class="filter-label">品牌：</div>
+						<ul class="filter-list">
+							<li class="item current">
+								<a href="">不限</a>
+							</li>
+							<li class="item">
+								<a href="">布丁</a>
+							</li>
+							<li class="item">
+								<a href="">如家</a>
+							</li>
+							<li class="item">
+								<a href="">7天</a>
+							</li>
+							<li class="item">
+								<a href="">速8</a>
+							</li>
+							<li class="item">
+								<a href="">维也纳</a>
+							</li>
+							<li class="item">
+								<a href="">智尚</a>
+							</li>
+							<li class="item">
+								<a href="">怡莱</a>
+							</li>
+							<li class="item">
+								<a href="">格林豪泰</a>
+							</li>
+							<li class="item">
+								<a href="">全季</a>
+							</li>
+							<li class="item">
+								<a href="">南苑E家</a>
+							</li>
+							<li class="item">
+								<a href="">锦江之星</a>
+							</li>
+							<li class="item">
+								<a href="">汉庭</a>
+							</li>
+							<li class="item">
+								<a href="">莫泰</a>
+							</li>
+							<li class="item">
+								<a href="">途家</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="filter-money">
+					<div class="filter-label-list">
+						<div class="filter-label">价格：</div>
+						<ul class="filter-list">
+							<li class="item current">
+								<a href="">不限</a>
+							</li>
+							<li class="item">
+								<a href="">50元以下</a>
+							</li>
+							<li class="item">
+								<a href="">50-100元</a>
+							</li>
+							<li class="item">
+								<a href="">100-150元</a>
+							</li>
+							<li class="item">
+								<a href="">150-200元</a>
+							</li>
+							<li class="item">
+								<a href="">200-500元</a>
+							</li>
+							<li class="item">
+								<a href="">500以上</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--排序-->
+			<div class="filter-sort">
+				<a href="#" class="sort-item sort-item-checked">
+					<span>
+						<span>默认</span>
+					<span></span>
+					</span>
+				</a>
+				<a href="#" class="sort-item">
+					<span>
+						<span>人气</span>
+					<span></span>
+					</span>
+				</a>
+				<a href="#" class="sort-item">
+					<span>
+						<span>价格</span>
+					<span></span>
+					</span>
+				</a>
+				<a href="#" class="sort-item">
+					<span>
+						<span>好评</span>
+					<span></span>
+					</span>
+				</a>
+			</div>
+
+			<!--主体-->
+
+			<div style="overflow: hidden;">
+				<div class="waterwall1 col-sm-9">
+					<div class="hostel">
+						<div class="hostel-main">
+							<div class="hostel-detail">
+								<a href="" class="hostel-img">
+									<img src="img/hostel0.jpg" alt="西天目大福农家预订/团购" width="208" height="129" style="float: left;" />
+								</a>
+								<div class="hostel-index">1</div>
+								<div class="hostel-intro">
+									<a href="" class="hostel-title">西天目山龙祥山庄</a><br />
+									<span class="hostel-loc" id="address1">临安市临安西天目山天目村6号</span>
+									<span class="hostel-addresslist"><a href="" class="view-map">地图</a></span>
+								</div>
+								<div class="hostel-rating">
+									<div class="hostel-score">
+										<a href="">
+											<span class="score-avg">4.8</span>
+											<span class="score-total">/5</span>分
+										</a>
+									</div>
+									<div class="hostel-comment">
+										<a href="">来自21条点评</a>
+									</div>
+								</div>
+								<div class="hostel-price">
+									<a href="">
+										<i class="money">￥</i>
+										<span class="pricex">118</span>起
+									</a>
+								</div>
+							</div>
+							<ul class="hostel-deallist">
+								<li class="deallist-li">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li hidden">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li hidden">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li hidden">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="fold">
+							<a href="" class="mod-viewed">展开剩余3个</a>
+							<span class="arrow"></span>
+						</div>
+					</div>
+					
+					<div class="hostel">
+						<div class="hostel-main">
+							<div class="hostel-detail">
+								<a href="" class="hostel-img">
+									<img src="img/hostel0.jpg" alt="西天目大福农家预订/团购" width="208" height="129" style="float: left;" />
+								</a>
+								<div class="hostel-index">1</div>
+								<div class="hostel-intro">
+									<a href="" class="hostel-title">西天目山龙祥山庄</a><br />
+									<span class="hostel-loc" id="address1">临安市临安西天目山天目村6号</span>
+									<span class="hostel-addresslist"><a href="" class="view-map">地图</a></span>
+								</div>
+								<div class="hostel-rating">
+									<div class="hostel-score">
+										<a href="">
+											<span class="score-avg">4.8</span>
+											<span class="score-total">/5</span>分
+										</a>
+									</div>
+									<div class="hostel-comment">
+										<a href="">来自21条点评</a>
+									</div>
+								</div>
+								<div class="hostel-price">
+									<a href="">
+										<i class="money">￥</i>
+										<span class="pricex">118</span>起
+									</a>
+								</div>
+							</div>
+							<ul class="hostel-deallist">
+								<li class="deallist-li">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li hidden">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li hidden">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li hidden">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="fold">
+							<a href="" class="mod-viewed">展开剩余3个</a>
+							<span class="arrow"></span>
+						</div>
+					</div>
+					
+					<div class="hostel">
+						<div class="hostel-main">
+							<div class="hostel-detail">
+								<a href="" class="hostel-img">
+									<img src="img/hostel0.jpg" alt="西天目大福农家预订/团购" width="208" height="129" style="float: left;" />
+								</a>
+								<div class="hostel-index">1</div>
+								<div class="hostel-intro">
+									<a href="" class="hostel-title">西天目山龙祥山庄</a><br />
+									<span class="hostel-loc" id="address1">临安市临安西天目山天目村6号</span>
+									<span class="hostel-addresslist"><a href="" class="view-map">地图</a></span>
+								</div>
+								<div class="hostel-rating">
+									<div class="hostel-score">
+										<a href="">
+											<span class="score-avg">4.8</span>
+											<span class="score-total">/5</span>分
+										</a>
+									</div>
+									<div class="hostel-comment">
+										<a href="">来自21条点评</a>
+									</div>
+								</div>
+								<div class="hostel-price">
+									<a href="">
+										<i class="money">￥</i>
+										<span class="pricex">118</span>起
+									</a>
+								</div>
+							</div>
+							<ul class="hostel-deallist">
+								<li class="deallist-li">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li hidden">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li hidden">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+
+								<li class="deallist-li hidden">
+									<div class="title">
+										<a href="">一正一早农家饭+单人床位</a>
+									</div>
+									<div class="extra">
+										<ul>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="extra">
+										<ul>
+											<li> 不含早餐</li>
+										</ul>
+									</div>
+									<div class="compare">
+										<span class="price"><i class="money">￥</i>110</span> 门店价
+										<span class="original-price"><i class="money">￥</i>180</span>
+									</div>
+									<div class="action">
+										<a href="" class="seebtn">查看详情</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="fold">
+							<a href="" class="mod-viewed">展开剩余3个</a>
+							<span class="arrow"></span>
+						</div>
+					</div>
+					
+				</div>
+				
+				
+				<!--地图-->
+				<div class="hostel-sidebar">
+					<div class="hostel-sidebar-container">
+						<div id="hostel_map"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--电梯-->
+		<div class="elevator2 col-lg-1">
+			<a id="elevator2_top"></a>
+		</div>
+
+		
+		<footer></footer>
+</body>
+</html>

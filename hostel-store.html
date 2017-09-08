@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>酒店</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/hostel-store.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/hostel-store.js" ></script>
+		<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=M6VBZ-JJQKI-4JZGL-5BLMN-QMQST-R4BHC"></script>
+	</head>
+	<body onload="init()">
+		<header></header>
+		<!--日期选择器-->
+		<div class="date-selector-in">
+			<div class="date-selector-content">
+				<table class="date-selector-table">
+					<thead>
+						<tr class="cal-header">
+							<th colspan="7">
+								<div class="cal-header-wrapper">
+									<a href="javascript:;" class="cal-nav-pre-m" title="2017年8月"> < </a>
+									<input type="text" maxlength="4" class="date-selector-changeyear"/>
+									年
+									<input type="text" maxlength="2"  class="date-selector-changemonth"/>
+									月
+									<a href="javascript:;" class="cal-nav-next-m" title="2017年8月"> > </a>
+								</div>
+							</th>
+						</tr>
+						<tr class="date-selector-weekday">
+							<th>一</th>
+							<th>二</th>
+							<th>三</th>
+							<th>四</th>
+							<th>五</th>
+							<th>六</th>
+							<th>日</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+						</tr>
+						<tr>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+						</tr>
+						<tr>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+						</tr>
+						<tr>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+						</tr>
+						<tr>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+						</tr>
+						<tr>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="date-selector-out">
+			<div class="date-selector-content">
+				<table class="date-selector-table">
+					<thead>
+						<tr class="cal-header">
+							<th colspan="7">
+								<div class="cal-header-wrapper">
+									<a href="javascript:;" class="cal-nav-pre-m" title="2017年8月"> < </a>
+									<input type="text" maxlength="4" class="date-selector-changeyear"/>
+									年
+									<input type="text" maxlength="2"  class="date-selector-changemonth"/>
+									月
+									<a href="javascript:;" class="cal-nav-next-m" title="2017年8月"> > </a>
+								</div>
+							</th>
+						</tr>
+						<tr class="date-selector-weekday">
+							<th>一</th>
+							<th>二</th>
+							<th>三</th>
+							<th>四</th>
+							<th>五</th>
+							<th>六</th>
+							<th>日</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+						</tr>
+						<tr>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+						</tr>
+						<tr>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+						</tr>
+						<tr>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+						</tr>
+						<tr>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+						</tr>
+						<tr>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+							<td ></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!--蒙板-->
+		<div class="overlay"></div>
+		<!--地图-->
+		<div id="map-wrapper">
+			<span class="close-btn">X</span>
+			<div id="map1"></div>
+		</div>
+		<!--图片展-->
+		<div class="grid-container container">
+			<div class="imgbox col-sm-6">
+				<a href="javascript:;">
+					<img src="img/hostelstore0.jpg" />
+				</a>
+				<a href="javascript:;" class="more-img-link">共39张图片</a>
+			</div>
+			<div class="hostel-content col-sm-6">
+				<div class="hostel-title">
+					<h5 class="hostel-name">同成之约酒店（禹航路店）</h5>
+					<div class="start-price">
+						<strong>
+							<i class="money">￥</i>
+							<span class="price">218</span>
+						</strong>起
+					</div>
+					<div class="content-box">
+						<p class="avg-comment">
+							<em>4.2</em>
+							/5分
+						</p>
+						<p class="content-num">
+							<a href="javascript:;">61条用户评价</a>
+						</p>
+					</div>
+					<div class="hostel-address">
+						<span id="geo">滨江区浦沿路773号（物美合作社5楼）</span>
+						<i class="map-icon glyphicon glyphicon-map-marker"></i>
+					</div>
+					<p class="feature">
+						<span class="wifi"></span>
+					</p>
+					
+				</div>
+				<div class="hostel-imglist">
+					<ul class="imglist">
+						<li class="imglist-item">
+							<a href="javascript:;">
+								<img src="img/hostelstore1.jpg" />
+							</a>
+						</li>
+						<li class="imglist-item">
+							<a href="javascript:;">
+								<img src="img/hostelstore1.jpg" />
+							</a>
+						</li>
+						<li class="imglist-item">
+							<a href="javascript:;">
+								<img src="img/hostelstore1.jpg" />
+							</a>
+						</li>
+						<li class="imglist-item">
+							<a href="javascript:;">
+								<img src="img/hostelstore1.jpg" />
+							</a>
+						</li>
+						<li class="imglist-item">
+							<a href="javascript:;">
+								<img src="img/hostelstore1.jpg" />
+							</a>
+						</li>
+						<li class="imglist-item">
+							<a href="javascript:;">
+								<img src="img/hostelstore1.jpg" />
+							</a>
+						</li>
+						<li class="imglist-item">
+							<a href="javascript:;">
+								<img src="img/hostelstore1.jpg" />
+							</a>
+						</li>
+						<li class="imglist-item">
+							<a href="javascript:;">
+								<img src="img/hostelstore1.jpg" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--标签-->
+		<div class="scrollnav container">
+			<ul class="scrollnav-tab">
+				<li class="current">房型预订</li>
+				<li>交通位置</li>
+				<li>酒店信息</li>
+				<li>住客点评(
+					<span class="comments">61</span>
+					)
+				</li>
+			</ul>
+		</div>
+		<!--房间列表-->
+		<div class="hostel-deallist container">
+			<!--日期选择-->
+			<div class="date-picker">
+				<div class="hostel-field-group-checkin">
+					<label>入住</label>
+					<input readonly="true" value="2017-9-1" id="checkin-date"/>
+					<span class="checkin-weekinfo">明天</span>
+					<i class="glyphicon glyphicon-calendar calendar"></i>
+				</div>
+				<div class="hostel-field-group-checkout">
+					<label>离店</label>
+					<input readonly="true" value="2017-09-01" id="checkout-date"/>
+					<span class="checkout-weekinfo">周六</span>
+					<i class="glyphicon glyphicon-calendar calendar"></i>
+				</div>
+				<span class="time-count">共28晚</span>
+				<button type="button" class="changetime">更改日期</button>
+			</div>
+			<!--房间列表-->
+			<ul class="deal-table-header">
+				<li class="deal-table-info">预订详情</li>
+				<li class="deal-table-breakfast">早餐</li>
+				<li class="deal-table-wifi">WIFI</li>
+				<li class="deal-table-sales">销量</li>
+				<li class="deal-table-condition">使用条件</li>
+				<li class="deal-table-price">团购价</li>
+			</ul>
+			<ul class="deal-table-body">
+				<li class="deal-table-item">
+					<div class="deal-table-item-content deal-table-info">
+						<a href="food-details.html">美丽约定/红颜知己2选1</a>
+						<span class="refund" data-toggle="tooltip" data-placement="bottom" title="急速退  过期退"></span>
+						<span class="gift" data-toggle="tooltip" data-placement="bottom" title="送水果1份,送咖啡1份"></span>
+					</div>
+					<div class="deal-table-item-content deal-table-breakfast">不含早餐</div>
+					<div class="deal-table-item-content deal-table-wifi">免费WiFi</div>
+					<div class="deal-table-item-content deal-table-sales">111</div>
+					<div class="deal-table-item-content deal-table-condition">
+						<p class="conditions">有效期至2017.09.11</p>
+						<p class="conditions">提前预约即可</p>
+					</div>
+					<div class="deal-table-item-content deal-table-price">
+						<em class="deal-price">
+							<i class="money">￥</i>
+							<span class="price">218</span>
+						</em>
+					</div>
+					<div class="deal-table-item-content deal-table-op">
+						<button type="button" class="buy-btn">立即抢购</button>
+					</div>
+				</li>
+				<li class="deal-table-item">
+					<div class="deal-table-item-content deal-table-info">
+						<a href="food-details.html">美丽约定/红颜知己2选1</a>
+						<span class="refund" data-toggle="tooltip" data-placement="bottom" title="急速退  过期退"></span>
+						<span class="gift" data-toggle="tooltip" data-placement="bottom" title="送水果1份,送咖啡1份"></span>
+					</div>
+					<div class="deal-table-item-content deal-table-breakfast">不含早餐</div>
+					<div class="deal-table-item-content deal-table-wifi">免费WiFi</div>
+					<div class="deal-table-item-content deal-table-sales">111</div>
+					<div class="deal-table-item-content deal-table-condition">
+						<p class="conditions">有效期至2017.09.11</p>
+						<p class="conditions">提前预约即可</p>
+					</div>
+					<div class="deal-table-item-content deal-table-price">
+						<em class="deal-price">
+							<i class="money">￥</i>
+							<span class="price">218</span>
+						</em>
+					</div>
+					<div class="deal-table-item-content deal-table-op">
+						<button type="button" class="buy-btn">立即抢购</button>
+					</div>
+				</li>
+				<li class="deal-table-item">
+					<div class="deal-table-item-content deal-table-info">
+						<a href="food-details.html">美丽约定/红颜知己2选1</a>
+						<span class="refund" data-toggle="tooltip" data-placement="bottom" title="急速退  过期退"></span>
+						<span class="gift" data-toggle="tooltip" data-placement="bottom" title="送水果1份,送咖啡1份"></span>
+					</div>
+					<div class="deal-table-item-content deal-table-breakfast">不含早餐</div>
+					<div class="deal-table-item-content deal-table-wifi">免费WiFi</div>
+					<div class="deal-table-item-content deal-table-sales">111</div>
+					<div class="deal-table-item-content deal-table-condition">
+						<p class="conditions">有效期至2017.09.11</p>
+						<p class="conditions">提前预约即可</p>
+					</div>
+					<div class="deal-table-item-content deal-table-price">
+						<em class="deal-price">
+							<i class="money">￥</i>
+							<span class="price">218</span>
+						</em>
+					</div>
+					<div class="deal-table-item-content deal-table-op">
+						<button type="button" class="buy-btn">立即抢购</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--交通位置-->
+		<div class="business-location container">
+			<h2 class="business-info-title">交通位置</h2>
+			<div class="business-location-wrapper">
+				<div class="left-content" id="left-content"></div>
+				<div class="right-content">
+					<div class="business-location-list">
+						<div class="business-location-list-info business-location-list-info-title-clicked">
+							<h4 class="business-location-list-info-title">
+					            <a href="javascript:;">同成之约酒店（禹航路店）</a>
+					        </h4>
+							<div class="business-location-list-info-body">
+								<div class="business-address">
+									<span class="title-label">地址：</span>
+									<span class="address">滨江区浦沿路773号（物美合作社5楼） </span>
+
+								</div>
+								<div class="business-phone">
+									<span class="title-label">电话：</span> 0571-88005786
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--酒店信息-->
+		<div class="hostel-info container">
+			<h2 class="business-info-title">酒店信息</h2>
+			<div class="hostelinfo-content">
+				<dt class="hostelinfo-title">联系方式</dt>
+				<dd>0571-89059088</dd>
+				<dt class="hostelinfo-title">酒店信息</dt>
+				<dd>暂无</dd>
+				<dt class="hostelinfo-title">酒店简介</dt>
+				<dd>茗雅足浴会馆一直以独特的技术手法和传统的足浴文化著称。在传统的技法上不断创新研发，以正宗的保健手法为主，糅合了各个门派的技法精华。典雅舒适的室内环境，各式各样的包间，手法熟练的技师，彰显着茗雅的专业和品质。</dd>
+			</div>
+			<div class="hostelinfo-content-list">
+				<dt class="hostelinfo-title">酒店设施</dt>
+				<dd>暂无</dd>
+			</div>
+			<div class="hostelinfo-content-list">
+				<dt class="hostelinfo-title">酒店服务</dt>
+				<dd>wifi</dd>
+			</div>
+			<div class="hostelinfo-content-list">
+				<dt class="hostelinfo-title">房间设施</dt>
+				<dd>暂无</dd>
+			</div>
+		</div>
+		<!--住客点评-->
+		<div class="user-reviews container">
+			<h2 class="business-info-title">消费评价</h2>
+			<div class="reviews-score">
+				<div class="rating-area total-detail">
+					<div class="total-group total-score">
+						<span>
+							<span class="ave-score">4.1</span>分
+						</span>
+					</div>
+					<div class="total-group">
+						<span class="rating-con">
+							<span class="rating-stars"></span>
+						</span>
+					</div>
+					<div class="total-group total-count">
+						共<strong>12466</strong>人评价
+					</div>
+				</div>
+				<div class="rating-area count-detail">
+					<div class="count-wrapper">
+						<div class="count-group">
+							<span class="score">1分</span>
+							<span class="percent-box">
+								<em class="precent" style="width: 1.8%"></em>
+							</span>
+							230人
+						</div>
+						<div class="count-group">
+							<span class="score">2分</span>
+							<span class="percent-box">
+								<em class="precent" style="width: 6.2%"></em>
+							</span>
+							776人
+						</div>
+						<div class="count-group">
+							<span class="score">3分</span>
+							<span class="percent-box">
+								<em class="precent" style="width: 18.1%"></em>
+							</span>
+							2266人
+						</div>
+						<div class="count-group">
+							<span class="score">4分</span>
+							<span class="percent-box">
+								<em class="precent" style="width: 24.6%"></em>
+							</span>
+							3073人
+						</div>
+						<div class="count-group">
+							<span class="score">5分</span>
+							<span class="percent-box">
+								<em class="precent" style="width: 49.1%"></em>
+							</span>
+							6121人
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="reviews-list">
+				<ul class="reviews-title">
+					<li class="reviews-title-item">
+						<a href="javascript:;" class="reviews-title-item-link reviews-title-item-link-active">全部</a>
+					</li>
+					<li class="reviews-title-item">
+						<a href="javascript:;" class="reviews-title-item-link">晒图评价</a>
+					</li>
+					<li class="reviews-title-item">
+						<a href="javascript:;" class="reviews-title-item-link">只看低分</a>
+					</li>
+				</ul>
+				<div class="reviews-list-content">
+					<ul class="rate-list">
+						<li class="rate-list-item">
+							<div class="reviews-user-info">
+								<div class="avatar-wrapper">
+									<img src="img/details19.jpg"/>
+								</div>
+								<p class="name-wrapper">
+									<span class="name">曾经的曾经mgj</span>
+									<i class="level-icon level-icon-2" title="等级VIP2"></i>
+								</p>
+							</div>
+							<div class="review-content-wrapper">
+								<div class="star">
+									<div class="rate-status">
+										<span class="rating-con">
+											<span class="rating-stars" style="width: 100%;"></span>
+										</span>
+									</div>
+									<span class="time">2017-08-24</span>
+								</div>
+								<p class="content">来吃好几次了，每次都非常想来，结果来了又不知道该吃些什么。感觉还没吃两口就饱了。我不适合吃自助。哈哈总体来说他家还不错，冰激凌和蛋糕都很好吃</p>
+								<div class="pic-list-wrapper">
+									<a href="javascript:;" class="pic-thumb">
+										<img src="img/details21.jpg" />
+									</a>
+									<a href="javascript:;" class="pic-thumb">
+										<img src="img/details23.jpg" />
+									</a>
+									<a href="javascript:;" class="pic-thumb">
+										<img src="img/details24.jpg" />
+									</a>
+								</div>
+								<div class="pic-view-list-wrapper" style="display: none;">
+									<img src="images/details21.jpg" />
+								</div>
+								<p class="shopname">嗨漾自助美食（星光大道店）</p>
+							</div>
+						</li>
+						<li class="rate-list-item">
+							<div class="reviews-user-info">
+								<div class="avatar-wrapper">
+									<img src="img/details19.jpg"/>
+								</div>
+								<p class="name-wrapper">
+									<span class="name">曾经的曾经mgj</span>
+									<i class="level-icon level-icon-2" title="等级VIP2"></i>
+								</p>
+							</div>
+							<div class="review-content-wrapper">
+								<div class="star">
+									<div class="rate-status">
+										<span class="rating-con">
+											<span class="rating-stars" style="width: 100%;"></span>
+										</span>
+									</div>
+									<span class="time">2017-08-24</span>
+								</div>
+								<p class="content">来吃好几次了，每次都非常想来，结果来了又不知道该吃些什么。感觉还没吃两口就饱了。我不适合吃自助。哈哈总体来说他家还不错，冰激凌和蛋糕都很好吃</p>
+								<div class="pic-list-wrapper">
+									<a href="javascript:;" class="pic-thumb">
+										<img src="img/details21.jpg" />
+									</a>
+									<a href="javascript:;" class="pic-thumb">
+										<img src="img/details23.jpg" />
+									</a>
+									<a href="javascript:;" class="pic-thumb">
+										<img src="img/details24.jpg" />
+									</a>
+								</div>
+								<div class="pic-view-list-wrapper" style="display: none;">
+									<img src="images/details21.jpg" />
+								</div>
+								<p class="shopname">嗨漾自助美食（星光大道店）</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!--电梯-->
+		<div class="elevator2 col-lg-1">
+			<a id="elevator2_top"></a>
+		</div>
+		<footer></footer>
+	</body>
+</html>

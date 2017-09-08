@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>外卖店铺</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/takeaway-store.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/takeaway-store.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="container-fluid">
+				<!--欢迎栏-->
+				<nav class="navbar navbar-inverse" style="margin-bottom: 0;">
+					<div class="navbar-header col-lg-2 col-lg-offset-2">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#public-header">
+							<span class="sr-only">切换导航栏</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<div class="navbar-brand">
+							<i class="glyphicon glyphicon-map-marker"></i>
+							<span class="current-city">滨江区</span>
+							<span>|</span>
+							<a href="" class="change-link">切换地址</a>
+						</div>
+
+					</div>
+					<div class="collapse navbar-collapse" id="public-header">
+						<ul class="nav navbar-nav col-lg-4 navbar-right">
+							<li>
+								<a href="register.html"><span class="glyphicon glyphicon-user"></span>注册</a>
+							</li>
+							<li>
+								<a href="login.html"><span class="glyphicon glyphicon-log-in"></span>登录</a>
+							</li>
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>购物车</a>
+							</li>
+							<li>
+								<a href="person.html"><span class="glyphicon glyphicon-home"></span>个人中心</a>
+							</li>
+						</ul>
+					</div>
+
+				</nav>
+
+				<!--搜索栏-->
+				<div class="container">
+					<h1 class="logo0 col-sm-2">
+						<a href="home.html">
+							<img src="" alt="网页logo"/>
+						</a>
+					</h1>
+					<div class="col-sm-6" style="margin-top: 16px;">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="搜索商家，美食" />
+							<span class="input-group-btn">
+								<button class="btn btn-danger" type="button">搜索</button>
+							</span>
+						</div>
+					</div>
+					<div class="com-sm-3" style="margin-top: 16px;">
+						<a href="" style="line-height: 40px;"><span style="margin-left: 56px;">入住加盟</span></a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="wrapper container-fluid">
+			<!--商家信息-->
+			<div class="rest-info container">
+				<div class="details">
+					<div class="up-details">
+						<div class="avatar">
+							<img src="img/takeaway-store4.jpg" />
+						</div>
+						<div class="list">
+							<div class="na">
+								<a href="#">
+									<span>东池便当（浦沿店）</span>
+									<i class="glyphicon glyphicon-chevron-down"></i>
+								</a>
+							</div>
+							<div class="stars">
+								<span class="star-rating">
+									<span class="star-score" style="width: 90%;"></span>
+								</span>
+								<span class="score">4.4</span>
+							</div>
+						</div>
+					</div>
+					<div class="down-details">
+						<div class="sale-time">
+							<p class="poi-detail-left">
+								<span class="glyphicon glyphicon-time"></span>
+								<span>营业时间</span>
+							</p>
+							<p class="poi-detail-right">
+								<span class="info-detail">08:30-20:00</span>
+							</p>
+						</div>
+						<div class="poi-address">
+							<p class="poi-detail-left">
+								<span class="glyphicon glyphicon-time"></span>
+								<span>商家地址</span>
+							</p>
+							<p class="poi-detail-right">
+								<span class="info-detail">杭州市滨江区浦沿街道银爵世纪公寓商铺21号</span>
+							</p>
+						</div>
+						<div class="telephone">
+							<p class="poi-detail-left">
+								<span class="glyphicon glyphicon-time"></span>
+								<span>商家电话</span>
+							</p>
+							<p class="poi-detail-right">
+								<span class="info-detail">057188933751/057188933752</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="save-up-wrap">
+					<a href="javascript:;" class="save-up">
+						<p>收藏本店</p>
+						<i class="fav-icon"></i>
+					</a>
+				</div>
+				<div class="right-bar">
+					<div class="average-speed">
+						<p class="right-bar-title">平均送餐时间</p>
+						<div class="num">
+							<strong>33</strong>分钟
+						</div>
+					</div>
+					<div class="act-ti">
+						<p class="right-bar-title">起送</p>
+						<div class="num">
+							<strong>20</strong><i class="money">￥</i>
+						</div>
+					</div>
+					<div class="in-ti">
+						<p class="right-bar-title">配送费</p>
+						<div class="num">
+							<strong>2.5</strong><i class="money">￥</i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--菜品信息-->
+			<div class="container food-list-content">
+				<div class="food-list">
+					<!--菜单-->
+					<div class="cate-tab-area">
+						<div class="tab-link">
+							<a href="#" class="tab-item active">菜单</a>
+							<a href="#" class="tab-item">评价</a>
+							<a href="#" class="tab-item">食品安全档案</a>
+						</div>
+						<div class="foodtype-nav">
+							<ul>
+								<li class="active">
+									<a href="javascript:;" class="type">下单先知</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="type">团购优惠</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="type">東池.便当+汤</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="type">单点菜品</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="type">東池.开胃组合餐</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="type">東池.便当+饮料</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="type">饮料</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="type">東池.便当+加多宝</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="type">米饭一杯</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="type">看得见干净吃得到健康</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="type">東池便当+美汁源果粒</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="type">小主大恩，缓用差评</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="food-nav">
+						<div class="category">
+							<h3 class="title">下单先知</h3>
+							<div class="pic-food-cont">
+								<div class="pic-food pic-food-rowlast">
+									<div class="avatar">
+										<img src="img/takeaway-store5.jpg" class="food-shape"/>
+									</div>
+									<div class="np">
+										<span class="name">进店抢红包，最高20元</span>
+									</div>
+									<div class="sale-info">
+										<span class="sold-count">月售 16份</span>
+									</div>
+									<div class="labels">
+										<a href="javascript:;" class="add-icon"></a>
+										<span class="food-cart-num">0</span>
+										<div class="price">
+											<i class="money">￥</i><span class="only">0</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="category">
+							<h3 class="title">東池.便当+汤</h3>
+							<div class="pic-food-cont">
+								<div class="pic-food">
+									<div class="avatar">
+										<img src="img/takeaway-store7.jpg" class="food-shape"/>
+									</div>
+									<div class="np">
+										<span class="name">泰式咖喱饭+汤</span>
+									</div>
+									<div class="sale-info">
+										<span class="sold-count">月售 22份</span>
+									</div>
+									<div class="labels">
+										<a href="javascript:;" class="add-icon"></a>
+										<span class="food-cart-num">0</span>
+										<div class="price">
+											<i class="money">￥</i><span class="only">34</span>
+										</div>
+									</div>
+								</div>
+								<div class="pic-food">
+									<div class="avatar">
+										<img src="img/takeaway-store8.jpg" class="food-shape"/>
+									</div>
+									<div class="np">
+										<span class="name">招牌叉烧饭+汤</span>
+									</div>
+									<div class="sale-info">
+										<span class="sold-count">月售 223份</span>
+									</div>
+									<div class="labels">
+										<a href="javascript:;" class="add-icon"></a>
+										<span class="food-cart-num">0</span>
+										<div class="price">
+											<i class="money">￥</i><span class="only">33</span>
+										</div>
+									</div>
+								</div>
+								<div class="pic-food pic-food-last">
+									<div class="avatar">
+										<img src="img/takeaway-store9.jpg" class="food-shape"/>
+									</div>
+									<div class="np">
+										<span class="name">梅干菜扣肉饭套餐+汤</span>
+									</div>
+									<div class="sale-info">
+										<span class="sold-count">月售 93份</span>
+									</div>
+									<div class="labels">
+										<a href="javascript:;" class="add-icon"></a>
+										<span class="food-cart-num">0</span>
+										<div class="price">
+											<i class="money">￥</i><span class="only">34</span>
+										</div>
+									</div>
+								</div>
+								<div class="pic-food pic-food-rowlast">
+									<div class="avatar">
+										<img src="img/takeaway-store10.jpg" class="food-shape"/>
+									</div>
+									<div class="np">
+										<span class="name">卤肉饭+汤</span>
+									</div>
+									<div class="sale-info">
+										<span class="sold-count">月售 53份</span>
+									</div>
+									<div class="labels">
+										<a href="javascript:;" class="add-icon"></a>
+										<span class="food-cart-num">0</span>
+										<div class="price">
+											<i class="money">￥</i><span class="only">34</span>
+										</div>
+									</div>
+								</div>
+								<div class="pic-food pic-food-rowlast">
+									<div class="avatar">
+										<img src="img/takeaway-store11.jpg" class="food-shape"/>
+									</div>
+									<div class="np">
+										<span class="name">台湾肉燥饭+汤</span>
+									</div>
+									<div class="sale-info">
+										<span class="sold-count">月售 157份</span>
+									</div>
+									<div class="labels">
+										<a href="javascript:;" class="add-icon"></a>
+										<span class="food-cart-num">0</span>
+										<div class="price">
+											<i class="money">￥</i><span class="only">34</span>
+										</div>
+									</div>
+								</div>
+								<div class="pic-food pic-food-rowlast pic-food-last">
+									<div class="avatar">
+										<img src="img/takeaway-store12.jpg" class="food-shape"/>
+									</div>
+									<div class="np">
+										<span class="name">花枝鱼排饭套餐+汤</span>
+									</div>
+									<div class="sale-info">
+										<span class="sold-count">月售 37份</span>
+									</div>
+									<div class="labels">
+										<a href="javascript:;" class="add-icon"></a>
+										<span class="food-cart-num">0</span>
+										<div class="price">
+											<i class="money">￥</i><span class="only">33</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<!--购物车-->
+		<div class="shopping-cart">
+			<form>
+				<div class="order-list">
+					<div class="title">
+						<span class="buy-title">购物车</span>
+						<span class="dishes">
+							<a href="javascript:;" class="clear-cart">
+								<i class="glyphicon glyphicon-trash"></i>清空菜品
+							</a>
+						</span>
+					</div>
+					<ul style="overflow: hidden;margin: 0;">
+						<li class="food">
+							<div class="na">泰式咖喱饭+饮料</div>
+							<div class="modify">
+								<a href="javascript:;" class="minus"> - </a>
+								<input type="text" class="text-count" value="1" maxlength="2"/>
+								<a href="javascript:;" class="plus"> + </a>
+							</div>
+							<div class="pri">
+								<i class="money">￥</i>
+								<span>35</span>
+							</div>
+						</li>
+					</ul>
+					<div class="packing-cost">
+						<span>包装盒</span>
+						<div class="boxtotalprice">
+							<i class="money">￥</i>
+							<span>2</span>
+						</div>
+					</div>
+					<div class="delivery-cost">
+						<span>配送费(不计入起送价)</span>
+						<div class="shippingfee">
+							<i class="money">￥</i>
+							<span>2.5</span>
+						</div>
+					</div>
+					<div class="total">
+						共
+						<span class="totalnumber"> 1 </span>
+						份，总计
+						<span class="bill">
+							<i class="money">￥</i>
+							<span>39.5</span>
+						</span>
+					</div>
+				</div>
+				<div class="cart-footer">
+					<div class="cart-logo"></div>
+					<div class="fr">
+						<a href="javascript:;" class="ready-pay" style="display: inline-block;">
+							差<span class="margintominprice">20</span>元起送
+						</a>
+						<input type="submit" value="立即下单" class="go-pay" style="display: none;"/>
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		<!--电梯-->
+		<div class="elevator2 col-lg-1">
+			<a id="elevator2_top"></a>
+		</div>
+		
+		<footer></footer>
+	</body>
+
+</html>

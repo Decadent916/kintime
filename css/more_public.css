@@ -1,0 +1,114 @@
+
+
+/*分类*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.filter{
+	margin-bottom: 10px;
+	font-size: 12px;
+	line-height: 19px;
+	border: 1px solid #eee;
+	padding: 0 15px;
+}
+.filter-label-list{
+	padding: 10px 0 10px 50px;
+	position: relative;
+	border-top: 1px dotted #ddd;
+}
+.filter-label{
+	position: absolute;
+	top: 13px;
+	left: 5px;
+	text-align: right;
+}
+.filter-list{
+	padding-right: 66px;
+}
+.item{
+	margin: 4px 16px 4px 0;
+	vertical-align: top;
+	height: 14px;
+	display: inline-block;
+	list-style: none;
+}
+.item a{
+	display: block;
+	padding: 0 4px;
+	height: 19px;
+	color: #666;
+	text-decoration: none;
+}
+.item a:hover{
+	border-radius: 2px;
+	color: #fff;
+	background-color: #2bb8aa;
+}
+.current a{
+	background-color: #2bb8aa;
+	color: #fff;
+	border-radius: 2px;
+}
+.filter-sort{
+	font-size: 12px;
+	line-height: 19px;
+	color: #333;
+	margin-top: 8px;
+	height: 29px;
+	border: 1px solid #eee;
+	margin-bottom: 10px;
+}
+.sort-item{
+	padding: 0 15px 0 20px;
+	line-height: 29px;
+	height: 29px;
+	border-right: 1px solid #eee;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	color: #333;
+}
+.sort-item:hover{
+	color: #2bb8aa;
+	text-decoration: none;
+}
+.sort-item-checked{
+	color: #2bb8aa;
+	margin-top: -1px;
+	border-top: 1px solid #2bb8aa;
+}
+
+/*瀑布流墙*/
+.waterwall{
+	overflow: hidden;
+}
+
+
+/*电梯*/
+.elevator2{
+	position: fixed;
+	right: 15px;
+	bottom: 20px;
+	padding: 0;
+	display: none;
+}
+#elevator2_top{
+	display: block;
+	width: 40px;
+	height: 36px;
+	border-radius: 2px;
+	background: url(../img/elevator2.png) 8px 6px no-repeat;
+	background-color: #444;
+	background-color: rgba(0,0,0,.6);
+}
+#elevator2_top:hover{
+	background-color: rgba(0,0,0,.8);
+}
+
+
+
+
+.money{
+	font-style: normal;
+}

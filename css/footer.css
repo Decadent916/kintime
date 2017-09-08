@@ -1,0 +1,29 @@
+.footer{
+	padding-top: 40px;
+	margin-top: 20px;
+	border-top: 3px solid white;
+	background: white;
+}
+.footer dt{
+	font-size: 16px;
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+.footer dd{
+	line-height: 180%;
+}
+.footer dd a{
+	color: #666;
+}
+.paycode{
+	border-top: 1px solid #eaeaea;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.paycode li{
+	display: inline;
+}
+.paycode p{
+	padding-top: 24px;
+	font-weight: bold;
+}

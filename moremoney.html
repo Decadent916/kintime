@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>我的理财 | Kintime</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/more_public.css" />
+		<link rel="stylesheet" href="css/moremoney.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/moremoney.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="container-fluid">
+				<!--欢迎栏-->
+				<nav class="navbar navbar-default">
+					<div class="navbar-header col-lg-2 col-lg-offset-2">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#public-header">
+				<span class="sr-only">切换导航栏</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+						<a class="navbar-brand" href="home.html">欢迎来到Kintime</a>
+					</div>
+					<div class="collapse navbar-collapse" id="public-header">
+						<ul class="nav navbar-nav col-lg-4 navbar-right">
+							<li>
+								<a href="register.html"><span class="glyphicon glyphicon-user"></span>注册</a>
+							</li>
+							<li>
+								<a href="login.html"><span class="glyphicon glyphicon-log-in"></span>登录</a>
+							</li>
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>购物车</a>
+							</li>
+							<li>
+								<a href="person.html"><span class="glyphicon glyphicon-home"></span>个人中心</a>
+							</li>
+						</ul>
+					</div>
+
+				</nav>
+
+			</div>
+		</header>
+
+		<div class="container-fluid k-banner">
+			<div class="k-banner-content container">
+				<div class="k-banner-portrait">
+					<a href="#" class="user-portrait">
+						<img src="img/userimg1.jpg" alt="用户头像"/>
+					</a>
+				</div>
+				<div class="k-banner-main col-sm-6">
+					<div class="k-banner-main-hello">
+						<p class="username">下午好，
+							<a href="#">王习习</a>
+						</p>
+						<div class="notice">
+							<a href="#">转账看头像，安全有保障 修改头像</a>
+						</div>
+					</div>
+					<div class="k-banner-main-detial">
+						<div class="useraccount">
+							账户名：
+							<a href="#">188****2733</a>
+						</div>
+						<ul class="k-banner-stat">
+							<li><a href="#" class="k-banner-stat-certify" data-toggle="tooltip" data-placement="top" title="您已通过Kintime实名认证"><i class="icon"></i></a></li>
+							<li><a href="#" class="k-banner-stat-mobile" data-toggle="tooltip" data-placement="top" title="您已绑定手机188****2733"><i class="icon"></i></a></li>
+						</ul>
+						<i style="margin: 0 20px;">|</i>
+						<div class="k-banner-stat-lasttime">上次登录时间：2017.06.05 18:06:28</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="k-content container">
+			<!--资产-->
+			<div class="k-assets fn-clear">
+				<table class="k-assets-table">
+					<tbody>
+						<tr>
+							<td class="k-assets-balance">
+								<div class="wrap">
+									<div class="k-assets-container" style="display: block;">
+										<div class="k-assets-content">
+											<div class="k-assets-header fn-clear">
+												<h3>账户余额</h3>
+											</div>
+											<div class="k-assets-body fn-clear">
+												<div class="k-assets-balance-amount">
+													<strong class="amount">286<span class="fen">.00</span></strong>  
+													<span>元</span>
+												</div>
+												<ul class="k-assets-balance-actions">
+													<li>
+														<a href="#" class="ui-btn">充 值</a>
+													</li>
+													<li>
+														<a href="#" class="ui-btn">提 现</a>
+													</li>
+													<li>
+														<a href="#" class="ui-btn">转 账</a>
+													</li>
+													<li>
+														<a href="#" class="ui-btn">查 看</a>
+													</li>
+												</ul>
+											</div>
+											<i title="点击隐藏金额" class="k-assets-visible-icon main"></i>
+										</div>
+									</div>
+									<div class="k-assets-container" style="display: none;">
+										<div class="k-assets-content">
+											<div class="k-assets-header fn-clear">
+												<h3>账户余额</h3>
+											</div>
+											<div class="k-assets-body fn-clear">
+												<ul class="k-assets-balance-actions">
+													<li>
+														<a href="#" class="ui-btn">充 值</a>
+													</li>
+													<li>
+														<a href="#" class="ui-btn">提 现</a>
+													</li>
+													<li>
+														<a href="#" class="ui-btn">转 账</a>
+													</li>
+													<li>
+														<a href="#" class="ui-btn">查 看</a>
+													</li>
+												</ul>
+											</div>
+											<i title="点击显示金额" class="k-assets-visible-icon"></i>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td class="k-assets-pcredit" rowspan="2">
+								<div class="wrap">
+									<div class="k-assets-container">
+										<div class="k-assets-content">
+											<div class="k-assets-header">
+												<h3>花呗</h3>
+												<i class="icon-ask"  data-toggle="tooltip" data-placement="bottom" title="支持余额、余额宝、借记卡快捷自动还款，全额按时还款不收费，账户安全有保障！"></i>
+											</div>
+											<div class="k-assets-body">
+												<p class="ft-gray">你的花呗额度：</p>
+												<div class="amount-des">
+													<strong class="amount">2000<span class="fen">.00</span></strong>  
+													<span>元</span>
+												</div>
+											</div>
+											<a href="#" class="ui-btn">开 通</a>
+											<a href="#">了解花呗</a>
+											<div class="k-assets-foot">
+												<p class="ft-gray">这月买，下月还</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td class="k-assets-finance" rowspan="2">
+								<div class="wrap">
+									<div class="k-assets-container">
+										<div class="k-assets-content">
+											<div class="k-assets-header">
+												<h3>招财宝</h3>
+											</div>
+											<div class="k-assets-body">
+												<p class="ft-gray">今日主供产品年化收益率 :</p>
+												<div class="money-rate">
+													<p class="start-rate">
+														2.5
+														<span class="per">%</span>
+													</p>
+													<p>  -  </p>
+													<p class="end-rate">
+														4.0
+														<span class="per">%</span>
+													</p>
+												</div>
+												<p class="ft-gray">灵活的定期理财</p>
+											</div>
+											<a href="#" class="ui-btn">查 看</a>
+											<a href="#">管 理</a>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td class="k-assets-other" rowspan="2">
+								<div class="wrap">
+									<div class="k-assets-container">
+										<div class="k-assets-content">
+											<div class="k-assets-header">
+												<h3>其他账户</h3>
+												<a href="#" style="float: right;">更多></a>
+											</div>
+											<div class="k-assets-body">
+												<p class="ft-gray" style="border-bottom: 1px solid #efefef;">银行卡:<a href="#">管理</a></p>
+												<p class="ft-gray" style="border-bottom: 1px solid #efefef;">阿里账户:<a href="#">管理</a></p>
+												<p class="ft-gray" style="border-bottom: 1px solid #efefef;"><a href="#">进入账户通</a></p>
+												<p class="ft-gray">花呗: <a href="#">管理</a></p>
+												<p class="ft-gray" style="padding-top: 0;">集分宝: <a href="#">7</a>个</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="k-assets-mfund">
+								<div class="wrap">
+									<div class="k-assets-container" style="display: block;">
+										<div class="k-assets-content">
+											<div class="k-assets-header fn-clear">
+												<h3>余额宝</h3>
+											</div>
+											<div class="k-assets-body fn-clear">
+												<div class="k-assets-mfund-amount">
+													<strong class="amount">286<span class="fen">.00</span></strong>  
+													<span>元</span>
+												</div>
+												<ul class="k-assets-mfund-actions">
+													<li>
+														<a href="#" class="ui-btn-orange">转 入</a>
+													</li>
+													<li>
+														<a href="#" class="ui-btn-orange">转 出</a>
+													</li>
+													<li>
+														<a href="#" class="ui-btn-orange">管 理</a>
+													</li>
+												</ul>
+												<p class="ft-gray" style="padding-top: 5px;">累计收益：<a href="#">6.63</a>元</p>
+											</div>
+											
+											<i title="点击隐藏金额" class="k-assets-visible-icon main"></i>
+										</div>
+									</div>
+									<div class="k-assets-container" style="display: none;">
+										<div class="k-assets-content">
+											<div class="k-assets-header fn-clear">
+												<h3>账户余额</h3>
+											</div>
+											<div class="k-assets-body fn-clear">
+												<ul class="k-assets-mfund-actions">
+													<li>
+														<a href="#" class="ui-btn-orange">转 入</a>
+													</li>
+													<li>
+														<a href="#" class="ui-btn-orange">转 出</a>
+													</li>
+													<li>
+														<a href="#" class="ui-btn-orange">管 理</a>
+													</li>
+												</ul>
+												<p class="ft-gray" style="padding-top: 5px;">累计收益：<a href="#">6.63</a>元</p>
+											</div>
+											<i title="点击显示金额" class="k-assets-visible-icon"></i>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--交易记录-->
+			<div class="k-trend">
+				<div class="k-trend-header">
+					<span>交易记录
+						<i></i>
+					</span>
+				</div>
+				<div class="k-trend-recent">
+					<div class="k-trend-recent-title">
+						<span>最近交易记录</span>
+						<a href="#" style="margin-left: 10px;">充值记录</a>
+						<span> | </span>
+						<a href="#">提现记录</a>
+						<span> | </span>
+						<a href="#">退款记录</a>
+						<div class="btn-group trend-select">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">余额收支明细
+        						<span class="caret"></span>
+    						</button>
+    						<ul class="dropdown-menu" role="menu">
+       	 						<li>
+            						<a href="#">余额宝收支明细</a>
+        						</li>
+        						<li>
+            						<a href="#">花呗额度明细</a>
+        						</li>
+    						</ul>
+						</div>
+					</div>
+					<div class="k-trend-recent-container">
+						<table class="table table-striped" style="margin-bottom: 0;">
+							<tbody>
+								<tr>
+									<td class="k-trend-time">2017.08.23</td>
+									<td class="k-trend-memo"></td>
+									<td class="k-trend-name"><a href="#">私房牛肉面杭州江和美店</a></td>
+									<td class="k-trend-amount">- 16.00</td>
+									<td class="k-trend-detail"><a href="#" data-toggle="tooltip" data-placement="top" title="点击查看明细"></a></td>
+									<td class="k-trend-status">交易成功</td>
+									<td class="k-trend-action">
+										<div class="btn-group">
+											<a class="dropdown-toggle" data-toggle="dropdown" href="#">详情
+        										<span class="caret"></span>
+    										</a>
+    										<ul class="dropdown-menu" role="menu">
+										        <li>
+										            <a href="#">删除</a>
+										        </li>
+    										</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="k-trend-time">2017.08.23</td>
+									<td class="k-trend-memo"></td>
+									<td class="k-trend-name"><a href="#">公交-K325-车号[27414] 08:47</a></td>
+									<td class="k-trend-amount">- 2.00</td>
+									<td class="k-trend-detail"><a href="#" data-toggle="tooltip" data-placement="top" title="点击查看明细"></a></td>
+									<td class="k-trend-status">交易成功</td>
+									<td class="k-trend-action">
+										<div class="btn-group">
+											<a class="dropdown-toggle" data-toggle="dropdown" href="#">详情
+        										<span class="caret"></span>
+    										</a>
+    										<ul class="dropdown-menu" role="menu">
+										        <li>
+										            <a href="#">删除</a>
+										        </li>
+    										</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="k-trend-time">2017.08.23</td>
+									<td class="k-trend-memo"></td>
+									<td class="k-trend-name"><a href="#">余额宝-2017.08.22-收益发放</a></td>
+									<td class="k-trend-amount">+ 0.12</td>
+									<td class="k-trend-detail"><a href="#" data-toggle="tooltip" data-placement="top" title="点击查看明细"></a></td>
+									<td class="k-trend-status">交易成功</td>
+									<td class="k-trend-action">
+										<div class="btn-group">
+											<a class="dropdown-toggle" data-toggle="dropdown" href="#">详情
+        										<span class="caret"></span>
+    										</a>
+    										<ul class="dropdown-menu" role="menu">
+										        <li>
+										            <a href="#">删除</a>
+										        </li>
+    										</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="k-trend-time">2017.08.23</td>
+									<td class="k-trend-memo"></td>
+									<td class="k-trend-name"><a href="#">提现-快速提现</a></td>
+									<td class="k-trend-amount"> 200.00</td>
+									<td class="k-trend-detail"><a href="#" data-toggle="tooltip" data-placement="top" title="点击查看明细"></a></td>
+									<td class="k-trend-status">交易成功</td>
+									<td class="k-trend-action">
+										<div class="btn-group">
+											<a class="dropdown-toggle" data-toggle="dropdown" href="#">详情
+        										<span class="caret"></span>
+    										</a>
+    										<ul class="dropdown-menu" role="menu">
+										        <li>
+										            <a href="#">删除</a>
+										        </li>
+    										</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="k-trend-time">2017.08.23</td>
+									<td class="k-trend-memo"></td>
+									<td class="k-trend-name"><a href="#">钱群英</a></td>
+									<td class="k-trend-amount">- 22.00</td>
+									<td class="k-trend-detail"><a href="#" data-toggle="tooltip" data-placement="top" title="点击查看明细"></a></td>
+									<td class="k-trend-status">交易成功</td>
+									<td class="k-trend-action">
+										<div class="btn-group">
+											<a class="dropdown-toggle" data-toggle="dropdown" href="#">详情
+        										<span class="caret"></span>
+    										</a>
+    										<ul class="dropdown-menu" role="menu">
+										        <li>
+										            <a href="#">删除</a>
+										        </li>
+    										</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="k-trend-time">2017.08.22</td>
+									<td class="k-trend-memo">
+										<a href="#" data-toggle="tooltip" data-placement="top" title="备注：转账（请勿备注个人敏感信息）"></a>
+									</td>
+									<td class="k-trend-name"><a href="#">转账</a></td>
+									<td class="k-trend-amount">- 5.20</td>
+									<td class="k-trend-detail"><a href="#" data-toggle="tooltip" data-placement="top" title="点击查看明细"></a></td>
+									<td class="k-trend-status">交易成功</td>
+									<td class="k-trend-action">
+										<div class="btn-group">
+											<a class="dropdown-toggle" data-toggle="dropdown" href="#">详情
+        										<span class="caret"></span>
+    										</a>
+    										<ul class="dropdown-menu" role="menu">
+										        <li>
+										            <a href="#">删除</a>
+										        </li>
+    										</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="k-trend-time">2017.08.22</td>
+									<td class="k-trend-memo"></td>
+									<td class="k-trend-name"><a href="#">公交-K325-车号[27424] 08:50</a></td>
+									<td class="k-trend-amount">- 2.00</td>
+									<td class="k-trend-detail"><a href="#" data-toggle="tooltip" data-placement="top" title="点击查看明细"></a></td>
+									<td class="k-trend-status">交易成功</td>
+									<td class="k-trend-action">
+										<div class="btn-group">
+											<a class="dropdown-toggle" data-toggle="dropdown" href="#">详情
+        										<span class="caret"></span>
+    										</a>
+    										<ul class="dropdown-menu" role="menu">
+										        <li>
+										            <a href="#">删除</a>
+										        </li>
+    										</ul>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="k-trend-recent-footer">
+							<a href="#" class="k-trend-trash">
+								<i class="glyphicon glyphicon-trash"></i>回收站
+							</a>
+							<a href="#" class="k-trend-more">查看所有交易记录</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--电梯-->
+		<div class="elevator2 col-lg-1">
+			<a id="elevator2_top"></a>
+		</div>
+		
+		<footer></footer>
+	</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Kintime - 登录</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="container-fluid" style="border-bottom: 2px solid #2bb8aa;padding: 10px 0;">
+				<a href="home.html" class="col-lg-1 col-lg-offset-2 sitelogo">Kintime</a>
+				<div class="col-lg-2 col-lg-offset-6 login-block">
+					<span>没有Kintime帐号？</span>
+					<a href="register.html">快速注册</a>
+				</div>
+			</div>
+		</header>
+		<div class="container" style="padding-top: 30px;position: relative;">
+			<div class="carousel slide" id="myCarousel" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/login-lunbo1.jpg" alt="First slide">
+					</div>
+					<div class="item">
+						<img src="img/login-lunbo2.jpg" alt="Second slide">
+					</div>
+					<div class="item">
+						<img src="img/login-lunbo1.jpg" alt="Third slide">
+					</div>
+				</div>
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+			</div>
+			<div class="col-sm-4 col-sm-offset-7" id="login">
+				<ul id="login_type">
+					<li><a href="javascript:;" class="login_type-click">密码登录</a></li>
+					<li><a href="javascript:;">验证码登录</a></li>
+				</ul>
+				<form role="form" class="login_type">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="请输入手机号" />
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="密码" />
+					</div>
+					<div class="form-group">
+						<button class="btn btn-success col-sm-12" type="submit">登录</button>
+					</div>
+				</form>
+				<form role="form" class="form-horizontal login_type" style="display: none;">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="请输入手机号" />
+					</div>
+					<div class="form-group">
+						<div class="col-sm-5" style="padding: 0;">
+							<input type="password" class="form-control" placeholder="请输入短信验证码" />
+						</div>
+						<div class="col-sm-5 col-sm-offset-2" style="padding: 0;">
+							<button class="btn btn-default col-sm-12">获取短信验证码</button>
+						</div>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-success col-sm-12" type="submit">登录</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<footer></footer>
+	</body>
+
+</html>

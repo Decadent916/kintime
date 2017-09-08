@@ -1,0 +1,22 @@
+.refund-empty{
+	width: 500px;
+	overflow: hidden;
+	margin: 160px auto 0;
+	padding: 10px 0;
+}
+.empty-icon{
+	float: left;
+	height: 160px;
+	width: 120px;
+	background: url(../img/refund0.png) no-repeat;
+}
+.empty-talk{
+	float: left;
+	margin: 42px 10px;
+}
+.empty-talk span{
+	font-size: 40px;
+	font-weight: 700;
+	color: #21c3ad;
+	padding-bottom: 20px;
+}

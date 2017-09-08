@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.sitelogo{
+	width: 54px;
+	height: 36px;
+	background-image: url;
+	text-decoration: none;
+}
+.login-block{
+	line-height: 36px;
+}
+.login-block span{
+	margin-right: 10px;
+}
+.login-block a{
+	padding: 3px 10px;
+	font-size: 12px;
+	background-color: #2db3a6;
+	color: white;
+	text-decoration: none;
+}

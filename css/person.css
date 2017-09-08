@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#left-content{
+	padding: 0;
+}
+#right-content{
+	padding: 0;
+}
+#left-content a{
+	text-decoration: none;
+}
+#right-content a{
+	text-decoration: none;
+}
+.left-menu a{
+	display: block;
+	padding: 5px 15px;
+	color: #666;
+}
+.left-menu a:hover{
+	color: #2bb8aa;
+}
+.left-menu_click{
+	background-color: #2bb8aa!important;
+	color: white!important;
+}
+.mainbox{
+	padding: 20px;
+	min-height: 750px;
+	border: 1px solid #ddd;
+	height: auto!important;
+	border-radius: 4px;
+}
+

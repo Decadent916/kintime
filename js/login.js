@@ -1,0 +1,13 @@
+$(function(){
+	$.get('footer.html',function(data){
+		$('footer').append(data);
+	});
+	$('#login_type').find('a').each(function(index){
+		$(this).click(function(){
+			$('#login_type').find('a').removeClass('login_type-click');
+			$(this).addClass('login_type-click');
+			$('.login_type').css('display','none');
+			$('.login_type').eq(index).css('display','block');
+		})
+	})
+})

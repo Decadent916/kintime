@@ -1,0 +1,72 @@
+img{
+	width: 81px;
+	height: 50px;
+}
+.f-order-header{
+	border-top: 1px solid #ddd;
+	color: #999;
+	line-height: 32px;
+	text-align: center;
+	background-color: #F9F9F9;
+	overflow: hidden;
+}
+.order-cell{
+	min-height: 26px;
+	float: left;
+	text-align: center;
+}
+.order-info{
+	width: 335px;
+}
+.order-number{
+	width: 54px;
+}
+.order-money{
+	width: 84px;
+}
+.order-status{
+	width: 153px;
+}
+.order-op{
+	width: 200px;
+}
+.f-order-title{
+	line-height:24px;
+	margin-top: 12px;
+	color: #999;
+	font-size: 12px;
+}
+.f-order-row{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 11px 0 15px;
+	color: #666;
+	line-height: 20px;
+	overflow: hidden;
+	font-size: 12px;
+}
+.deal-info{
+	padding: 0 20px;
+	clear: both;
+	overflow: hidden;
+}
+.img-w{
+	float: left;
+	width: 100px;
+}
+.img-w img{
+	vertical-align: top;
+}
+.info-detail{
+	float: right;
+	width: 195px;
+}
+.info-detail p{
+	color: #999;
+}
+.order-op a{
+	text-decoration: none;
+	display: block;
+	color: #2bb8aa;
+	line-height: 27px;
+}

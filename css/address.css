@@ -1,0 +1,350 @@
+.provinceCityAll {
+	position: absolute;
+	background: #FFF;
+	display: none
+}
+
+.provinceCityAll .tabs {
+	height: 28px;
+	border: 1px solid #d6d6d6;
+	border-right: none;
+	border-bottom: 2px solid #323055;
+}
+
+.provinceCityAll .tabs li {
+	height: 28px;
+	float: left;
+}
+
+.provinceCityAll .tabs li a,.provinceCity .tabs li a:visited {
+	display: block;
+	height: 28px;
+	color: #777777;
+	line-height: 28px;
+	text-align: center;
+	text-decoration: none;
+	float: left;
+	width: 101px;
+	border-right: 1px solid #d6d6d6;
+}
+
+.provinceCityAll .tabs li a.current,.provinceCity .tabs li a.current:visited
+	{
+	background: url(../images/bg_mc_0113_3.png) center center repeat;
+	color: #FFF
+}
+
+.provinceCityAll .con {
+	height: 130px;
+	border: 1px solid #d6d6d6;
+	border-top: none;
+	padding: 10px
+}
+
+/*国家*/
+.provinceCityAll .countryAll{
+	float: left;
+	width: 383px;
+	margin: auto;
+}
+.provinceCityAll .countryAll .list {
+	float: left;
+	width: 325px;
+}
+
+.provinceCityAll .countryAll .list li {
+	float: left;
+	width: 81px;
+	text-align: center;
+	overflow: hidden;
+	padding: 3px 0
+}
+.provinceCityAll .countryAll .pre a,.provinceCityAll .countryAll .pre a:visited
+	{
+	float: left;
+	width: 29px;
+	height: 109px;
+	background: url(../images/bg_mc_0113_4.png) left center no-repeat;
+	cursor: pointer;
+}
+
+.provinceCityAll .countryAll .pre a.can,.provinceCityAll .countryAll .pre a.can:visited
+	{
+	background: url(../images/bg_mc_0113_4.png) -87px center no-repeat
+}
+
+.provinceCityAll .countryAll .next a,.provinceCityAll .countryAll .next a:visited
+	{
+	float: right;
+	width: 29px;
+	height: 109px;
+	background: url(../images/bg_mc_0113_4.png) -58px center no-repeat;
+	cursor: pointer;
+}
+
+.provinceCityAll .countryAll .next a.can,.provinceCityAll .countryAll .next a.can:visited
+	{
+	background: url(../images/bg_mc_0113_4.png) -29px center no-repeat
+}
+
+.provinceCityAll .countryAll .list li a,.provinceCityAll .countryAll .list li a:visited
+	{
+	color: #777777
+}
+
+.provinceCityAll .countryAll .list li a.current,.provinceCityAll .countryAll .list li a.current:visited
+	{
+	color: #ff6c00
+}
+
+
+
+/*省份*/
+.provinceCityAll .provinceAll{
+	float: left;
+	width: 383px;
+	margin: auto;
+}
+.provinceCityAll .provinceAll .list {
+	float: left;
+	width: 325px;
+}
+
+.provinceCityAll .provinceAll .list li {
+	float: left;
+	width: 81px;
+	text-align: center;
+	overflow: hidden;
+	padding: 3px 0
+}
+.provinceCityAll .provinceAll .pre a,.provinceCityAll .provinceAll .pre a:visited
+	{
+	float: left;
+	width: 29px;
+	height: 109px;
+	background: url(../images/bg_mc_0113_4.png) left center no-repeat;
+	cursor: pointer;
+}
+
+.provinceCityAll .provinceAll .pre a.can,.provinceCityAll .provinceAll .pre a.can:visited
+	{
+	background: url(../images/bg_mc_0113_4.png) -87px center no-repeat
+}
+
+.provinceCityAll .provinceAll .next a,.provinceCityAll .provinceAll .next a:visited
+	{
+	float: right;
+	width: 29px;
+	height: 109px;
+	background: url(../images/bg_mc_0113_4.png) -58px center no-repeat;
+	cursor: pointer;
+}
+
+.provinceCityAll .provinceAll .next a.can,.provinceCityAll .provinceAll .next a.can:visited
+	{
+	background: url(../images/bg_mc_0113_4.png) -29px center no-repeat
+}
+
+.provinceCityAll .provinceAll .list li a,.provinceCityAll .provinceAll .list li a:visited
+	{
+	color: #777777
+}
+
+.provinceCityAll .provinceAll .list li a.current,.provinceCityAll .provinceAll .list li a.current:visited
+	{
+	color: #ff6c00
+}
+
+/*城市*/
+.provinceCityAll .cityAll {
+	float: left;
+	width: 383px;
+	margin: auto
+}
+
+.provinceCityAll .cityAll .list {
+	float: left;
+	width: 325px;
+}
+
+.provinceCityAll .cityAll .list li {
+	float: left;
+	width: 81px;
+	text-align: center;
+	overflow: hidden;
+	padding: 3px 0
+}
+.provinceCityAll .cityAll li a,.provinceCityAll .cityAll li a:visited {
+	color: #777777
+}
+
+.provinceCityAll .cityAll li a.current,.provinceCityAll .cityAll li a.current:visited
+	{
+	color: #ff6c00
+}
+.provinceCityAll .cityAll .pre a,.provinceCityAll .cityAll .pre a:visited
+	{
+	float: left;
+	width: 29px;
+	height: 109px;
+	background: url(../images/bg_mc_0113_4.png) left center no-repeat
+}
+
+.provinceCityAll .cityAll .pre a.can,.provinceCityAll .cityAll .pre a.can:visited
+	{
+	background: url(../images/bg_mc_0113_4.png) -87px center no-repeat
+}
+
+.provinceCityAll .cityAll .next a,.provinceCityAll .cityAll .next a:visited
+	{
+	float: right;
+	width: 29px;
+	height: 109px;
+	background: url(../images/bg_mc_0113_4.png) -58px center no-repeat
+}
+
+.provinceCityAll .cityAll .next a.can,.provinceCityAll .cityAll .next a.can:visited
+	{
+	background: url(../images/bg_mc_0113_4.png) -29px center no-repeat
+}
+
+
+/*区县*/
+.provinceCityAll .countyAll {
+	float: left;
+	width: 383px;
+	margin: auto
+}
+.provinceCityAll .countyAll .list {
+	float: left;
+	width: 325px;
+}
+.provinceCityAll .countyAll li {
+	float: left;
+	width: 81px;
+	text-align: center;
+	overflow: hidden;
+	padding: 3px 0
+}
+
+.provinceCityAll .countyAll li a,.provinceCityAll .cityAll li a:visited
+	{
+	color: #777777; 
+}
+.provinceCityAll .countyAll li a.current,.provinceCityAll .cityAll li a.current:visited
+	{
+	color: #ff6c00
+}
+.provinceCityAll .countyAll .pre a,.provinceCityAll .countyAll .pre a:visited
+	{
+	float: left;
+	width: 29px;
+	height: 109px;
+	background: url(../images/bg_mc_0113_4.png) left center no-repeat
+}
+
+.provinceCityAll .countyAll .pre a.can,.provinceCityAll .countyAll .pre a.can:visited
+	{
+	background: url(../images/bg_mc_0113_4.png) -87px center no-repeat
+}
+
+.provinceCityAll .countyAll .next a,.provinceCityAll .countyAll .next a:visited
+	{
+	float: right;
+	width: 29px;
+	height: 109px;
+	background: url(../images/bg_mc_0113_4.png) -58px center no-repeat
+}
+
+.provinceCityAll .countyAll .next a.can,.provinceCityAll .countyAll .next a.can:visited
+	{
+	background: url(../images/bg_mc_0113_4.png) -29px center no-repeat
+}
+
+
+.countryAll .list li:hover{
+	background-color:#FFE4D2
+}
+.provinceAll .list li:hover
+	{
+	background-color:#FFE4D2
+}
+.cityAll .list li:hover{
+	background-color:#FFE4D2
+}
+.countyAll li a:hover{
+	background-color:#FFE4D2
+}
+
+
+.provinceCityAll {
+	z-index: 2
+}
+
+
+
+
+
+
+
+
+
+
+
+/*输入框*/
+.city_input {
+	cursor: pointer;
+}
+
+
+
+.provinceCityAll .clearfix {
+	overflow: auto;
+	height: 1%
+}
+
+.provinceCityAll img {
+	border: 0;
+	vertical-align: middle
+}
+
+.provinceCityAll a,.provinceCityAll a:visited {
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+}
+
+.provinceCityAll a:hover {
+	text-decoration: underline;
+	color: #333
+}
+
+.provinceCityAll a,.provinceCityAll a:hover {
+	text-decoration: none
+}
+
+.provinceCityAll ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.provinceCityAll label {
+	color: #6CBD45;
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+	margin: 0;
+}
+
+
+.provinceCityAll li , .provinceCityAll .next, .provinceCityAll .pre {
+	cursor: pointer;
+}
+
+.provinceCityAll {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

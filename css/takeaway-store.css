@@ -1,0 +1,565 @@
+body{
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.4;
+	background-color: #F5F5F5;
+}
+ul,ol{
+	list-style: none;
+	padding: 0;
+}
+/*电梯*/
+.elevator2{
+	position: fixed;
+	right: 15px;
+	bottom: 20px;
+	padding: 0;
+	display: none;
+}
+#elevator2_top{
+	display: block;
+	width: 40px;
+	height: 36px;
+	border-radius: 2px;
+	background: url(../img/elevator2.png) 8px 6px no-repeat;
+	background-color: #444;
+	background-color: rgba(0,0,0,.6);
+}
+#elevator2_top:hover{
+	background-color: rgba(0,0,0,.8);
+}
+/*header*/
+header{
+	background: #fff;
+}
+a{
+	text-decoration: none;
+	color: #333;
+	font-size: 16px;
+}
+a:hover{
+	text-decoration: none;
+	color: #333;
+}
+.current-city{
+	font-size: 12px;
+	line-height: 32px;
+	margin-left: 6px;
+}
+.change-link{
+	display: inline-block;
+	color: #FFD161;
+	margin-left: 8px;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 32px;
+}
+.change-link:hover{
+	text-decoration: none;
+	color: #FFD161;
+}
+.logo0{
+	margin: 0;
+	padding: 0;
+	margin-top: 16px;
+	height: 67px;
+	font-size: 18px;
+}
+.logo0 a{
+	text-decoration: none;
+	color: #333;
+}
+.logo0 a:hover{
+	text-decoration: none;
+	color: #333;
+}
+
+/*主体*/
+.wrapper{
+	padding: 0;
+	background-color: #F5F5F5;
+	margin-bottom: 30px;
+}
+/*商家信息*/
+.rest-info{
+	margin-top: 15px;
+	padding: 0;
+	height: 120px;
+	background-color: #fff;
+	position: relative;
+	box-sizing: border-box;
+}
+.details{
+	width: 52%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-right: 10px;
+	overflow: hidden;
+	z-index: 3;
+}
+.up-details{
+	overflow: hidden;
+}
+.rest-info .avatar{
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 106px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	border: 1px solid #eee;
+	overflow: hidden;
+	box-sizing: border-box;
+	float: left;
+}
+.rest-info .avatar img{
+	width: 106px;
+	height: 80px;
+}
+.rest-info .list{
+	float: left;
+	width: 60%;
+}
+.rest-info .list .na{
+	width: 100%;
+	margin-left: 16px;
+	padding-top: 38px;
+	line-height: 1;
+}
+.rest-info .list .na .glyphicon-chevron-down{
+	top: 3px;
+}
+.stars{
+	margin-left: 16px;
+	margin-top: 14px;
+}
+.star-rating{
+	width: 75px;
+	height: 12px;
+	line-height: 12px;
+	overflow: hidden;
+	background-image: url(../img/public9.png);
+	background-repeat: repeat-x;
+	background-size: 15px 12px;
+	display: inline-block;
+}
+.star-score{
+	height: 12px;
+	line-height: 12px;
+	overflow: hidden;
+	background-image: url(../img/public10.png);
+	background-repeat: repeat-x;
+	background-size: 15px 12px;
+	display: inline-block;
+}
+.stars .score{
+	margin-left: 9px;
+	line-height: 12px;
+	color: #686868;
+}
+.save-up-wrap{
+	width: 120px;
+	height: 120px;
+	float: right;
+	text-align: center;
+	border-left: 1px dashed #e5e5e5;
+}
+.save-up{
+	display: block;
+	margin-top: 31px;
+}
+.save-up p{
+	font-size: 12px;
+	color: #6A6A6A;
+}
+.fav-icon{
+	width: 38px;
+	height: 38px;
+	background-image: url(../img/public3.png);
+	background-position: -409px -311px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.save-up:hover .fav-icon{
+	background-position: -370px -311px;
+}
+.right-bar{
+	color: #666;
+	padding-top: 31px;
+	float: right;
+}
+.average-speed,.act-ti,.in-ti{
+	display: inline-block;
+	margin-right: 70px;
+	text-align: left;
+}
+.right-bar-title{
+	font-size: 12px;
+	color: #6a6a6a;
+}
+.right-bar .num{
+	font-size: 12px;
+	color: #4a4a4a;
+	margin-top: 10px;
+}
+.right-bar strong{
+	font-size: 28px;
+	font-weight: 900;
+	vertical-align: sub;
+}
+.money{
+	font-style: normal;
+}
+.down-details{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: #666;
+	display: none;
+}
+.down-details .sale-time,.down-details .poi-address,.down-details .telephone{
+	margin-left: 20px;
+}
+.poi-detail-left{
+	display: inline-block;
+	width: 22%;
+	font-size: 12px;
+}
+.poi-detail-right{
+	display: inline-block;
+	width: 75%;
+	font-size: 12px;
+	vertical-align: top;
+	line-height: 15px;
+}
+.poi-detail-right .info-detail{
+	width: 70%;
+	overflow: hidden;
+	font-weight: 400;
+}
+.rest-info .over{
+	left: -1px;
+	background-color: #fff;
+	border: 1px solid #ebebeb;
+	border-top: 0;
+	overflow: visible;
+	box-shadow: 1px 1px 5px #ccc;
+	-moz-box-shadow:1px 1px 5px #ccc;
+	-webkit-box-shadow:1px 1px 5px #ccc;
+	-ms-box-shadow:1px 1px 5px #ccc;
+	-o-box-shadow:1px 1px 5px #ccc;
+}
+.rest-info .over .down-details{
+	display: block;
+}
+/*菜品信息*/
+.food-list-content{
+	padding: 0;
+}
+.food-list{
+	margin-top: 14px;
+	width: 60%;
+	padding: 0;
+}
+/*菜单*/
+.cate-tab-area{
+	background-color: #fff;
+}
+.tab-link{
+	position: relative;
+	border-bottom: 1px solid #e5e5e5;
+	height: 50px;
+	line-height: 49px;
+	padding-left: 40px;
+}
+.tab-item{
+	display: inline-block;
+	margin-right: 50px;
+	text-align: center;
+	font-size: 16px;
+	background-color: #fff;
+	text-decoration: none;
+	color: #333;
+}
+.tab-item.active{
+	color: #ffa627;
+	border-bottom: 3px solid #ffa627;
+	height: 47px;
+}
+.foodtype-nav{
+	padding: 25px 20px 12px;
+}
+.foodtype-nav ul{
+	overflow: hidden;
+}
+.foodtype-nav ul li{
+	float: left;
+	width: 19%;
+	height: 24px;
+	line-height: 24px;
+	margin-right: 5px;
+	margin-bottom: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.foodtype-nav ul li .type{
+	padding: 5px;
+	color: #535353;
+	height: 14px;
+	font-size: 14px;
+	line-height: 14px;
+}
+.foodtype-nav ul .active .type{
+	color: #FFA735;
+}
+.category{
+	margin-top: 14px;
+	background-color: #fff;
+}
+.category .title{
+	font-size: 16px;
+	height: 50px;
+	padding-left: 19px;
+	padding-top: 15px;
+	background-color: #fff;
+	border-bottom: 1px solid #e5e5e5;
+	color: #333;
+	margin: 0;
+}
+.pic-food-cont{
+	overflow: hidden;
+	border-bottom: 1px solid #ebebeb;
+}
+.pic-food{
+	float: left;
+	width: 33%;
+	height: 251px;
+	border-right: 1px dashed #e5e5e5;
+	border-bottom: 1px dashed #e5e5e5;
+	overflow: hidden;
+}
+.pic-food-rowlast{
+	border-bottom: none;
+}
+.pic-food-last{
+	border-right: none;
+}
+.pic-food .avatar{
+	height: 127px;
+	margin: 20px auto 0;
+	width: 170px;
+}
+.pic-food .avatar .food-shape{
+	display: block;
+	width: 100%;
+	height: 100%;
+	
+}
+.pic-food .np{
+	width: 170px;
+	margin: 12px auto 0;
+	font-size: 14px;
+	font-weight: 700;
+	color: #333;
+}
+.pic-food .np .name{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.pic-food .sale-info{
+	width: 170px;
+	margin: 5px auto 0;
+	height: 16px;
+	font-size: 12px;
+	color: #999;
+	overflow: hidden;
+}
+.pic-food .sale-info .sold-count{
+	float: left;
+}
+.pic-food .labels{
+	width: 170px;
+	margin: 8px auto 0;
+}
+.pic-food .labels .add-icon{
+	width: 24px;
+	height: 24px;
+	float: right;
+	background: url(../img/takeaway-store6.svg) 100% no-repeat;
+}
+.pic-food .labels .food-cart-num{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	color: #333;
+	text-align: center;
+	float: right;
+	margin: 2px 8px 0 0;
+	background-color: #FFD705;
+	border-radius: 5px;
+	display: none;
+}
+.pic-food .labels .price{
+	margin-top: 3px;
+	float: left;
+	font-size: 14px;
+	color: #ff5a5a;
+	font-weight: 700;
+}
+/*购物车*/
+.shopping-cart{
+	position: fixed;
+	left: 50%;
+	bottom: 0;
+	margin-left: 150px;
+	width: 20%;
+	font-size: 14px;
+	z-index: 100;
+}
+.shopping-cart .order-list{
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+}
+.shopping-cart .order-list .title{
+	color: #333;
+	background-color: #fafafa;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 10px;
+	font-size: 14px;
+	overflow: hidden;
+}
+.shopping-cart .order-list .title .buy-title{
+	float: left;
+}
+.shopping-cart .order-list .title .dishes{
+	float: right;
+	white-space: nowrap;
+}
+.shopping-cart .order-list .food{
+	border-bottom: 1px solid #E5E5E5;
+	margin: 0 10px;
+	overflow: hidden;
+}
+.shopping-cart .order-list .food .na{
+	width: 50%;
+	margin: 16px 0 14px;
+	float: left;
+}
+.shopping-cart .order-list .food .modify{
+	padding-top: 16px;
+	font-size: 12px;
+	float: left;
+}
+.shopping-cart .minus,.shopping-cart .plus{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	letter-spacing: 0;
+	color: #333;
+	text-align: center;
+	float: left;
+	border: 1px solid #E5E5E5;
+}
+.shopping-cart .minus{
+	border-top-left-radius:2px;
+	border-bottom-left-radius:2px;
+}
+.shopping-cart .plus{
+	border-top-right-radius:2px;
+	border-bottom-right-radius:2px;
+}
+.shopping-cart .text-count{
+	display: inline-block;
+	width: 28px;
+	height: 16px;
+	padding: 0 3px;
+	line-height: 16px;
+	border: 1px solid #C6C6C6;
+	border-left: 0;
+	border-right: 0;
+	border-color: #E5E5E5;
+	text-align: center;
+	float: left;
+}
+.shopping-cart .order-list .food .pri{
+	color: #ffa735;
+	line-height: 49px;
+	text-align: right;
+	float: right;
+	width: 25%;
+}
+.shopping-cart .order-list .packing-cost,.shopping-cart .order-list .delivery-cost{
+	padding-top: 3px;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.shopping-cart .order-list .packing-cost .boxtotalprice,.shopping-cart .order-list .delivery-cost .shippingfee{
+	color: #ffa735;
+	float: right;
+}
+.shopping-cart .order-list .total{
+	display: block;
+	height: 54px;
+	line-height: 54px;
+	text-align: right;
+	padding-right: 10px;
+}
+.shopping-cart .order-list .total .totalnumber{
+	margin: 0 3px;
+	color: #fe4d3d;
+}
+.shopping-cart .order-list .total .bill{
+	font-size: 28px;
+	font-weight: 700;
+	color: #fe4d3d;
+	margin-left: 3px;
+}
+.shopping-cart .cart-footer{
+	position: relative;
+	background-color: #333;
+	cursor: pointer;
+	height: 50px;
+}
+.shopping-cart .cart-footer .cart-logo{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 13px;
+	left: 10px;
+	background: url(../img/takeaway-store13.svg) no-repeat;
+}
+.shopping-cart .cart-footer .fr{
+	float: right;
+}
+.shopping-cart .cart-footer .fr .ready-pay{
+	display: inline-block;
+	background: #a0a0a0;
+	color: #fff;
+	padding: 0 15px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+}
+.shopping-cart .cart-footer .fr .go-pay{
+	color: #333;
+	font-weight: 700;
+	padding: 0 23px;
+	cursor: pointer;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+	background: #ffd161;
+	border: 0;
+}

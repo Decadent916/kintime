@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.sitelogo{
+	width: 54px;
+	height: 36px;
+	background-image: url;
+	text-decoration: none;
+}
+.login-block{
+	line-height: 36px;
+}
+.login-block span{
+	margin-right: 10px;
+}
+.login-block a{
+	padding: 3px 10px;
+	font-size: 12px;
+	background-color: #2db3a6;
+	color: white;
+	text-decoration: none;
+}
+#login{
+	top: -300px;
+}
+#login form{
+	clear: both;
+}
+#login_type li{
+	list-style-type: none;
+	float: left;
+	width: 50%;
+	text-align: center;
+	display: inline-block;
+}
+#login_type a{
+	text-decoration: none;
+	width: 100%;
+	border-bottom: 2px solid #999;
+	display: inline-block;
+	font-size: 20px;
+	line-height: 30px;
+	color: #999;
+	margin-bottom: 20px;
+}
+.login_type-click{
+	border-bottom: 2px solid #000!important;
+	color: #000!important;
+}

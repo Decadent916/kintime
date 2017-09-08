@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>机票 | Kintime</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/moreticket.css" />
+		<link rel="stylesheet" href="css/more_public.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/moreticket.js"></script>
+	</head>
+
+	<body>
+		<!--<header></header>-->
+		<div class="container-fluid">
+			<!--欢迎栏-->
+			<nav class="navbar navbar-default">
+				<div class="navbar-header col-lg-2 col-lg-offset-2">
+					<a class="navbar-brand" href="home.html">欢迎来到Kintime</a>
+				</div>
+				<ul class="nav navbar-nav col-lg-4 navbar-right">
+					<li>
+						<a href="register.html"><span class="glyphicon glyphicon-user"></span>注册</a>
+					</li>
+					<li>
+						<a href="login.html"><span class="glyphicon glyphicon-log-in"></span>登录</a>
+					</li>
+					<li>
+						<a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>购物车</a>
+					</li>
+					<li>
+						<a href="person.html"><span class="glyphicon glyphicon-home"></span>个人中心</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="container">
+			<div class="ticket-header">
+				<div class="header-logo">
+					<img src="" alt="Logo"/>
+				</div>
+				<div class="header-picker">
+					<div class="ticket-city">
+						<div class="start-city city">
+							<span class="ticket-city-text">出发城市</span>
+							<div style="outline: none;">
+								<div class="picker-input">
+									<img src="img/ticket2.png" class="picker-input-ico"/>
+									请选择出发城市
+								</div>
+								<div class="picker-body" style="display: none;">
+									<div class="picker-hint">
+										<span class="picker-hint-title">热门城市</span>
+									</div>
+									<div class="picker-content">
+										<div class="picker-tap">
+											<div class="picker-tab-int1">
+												<div class="picker-tab-header">国内</div>
+												<div class="picker-tab-item picker-tab-item-clicked">热门城市</div>
+												<div class="picker-tab-item">ABCDE</div>
+												<div class="picker-tab-item">FGHJ</div>
+												<div class="picker-tab-item">KLMNP</div>
+												<div class="picker-tab-item">QRSTW</div>
+												<div class="picker-tab-item">XYZ</div>
+											</div>
+											<div class="city-body">
+												<div class="city-item">北京</div>
+												<div class="city-item">上海</div>
+												<div class="city-item">广州</div>
+												<div class="city-item">深圳</div>
+												<div class="city-item">昆明</div>
+												<div class="city-item">成都</div>
+												<div class="city-item">西安</div>
+												<div class="city-item">重庆</div>
+											</div>
+										</div>
+									</div>
+									<div class="picker-content">
+										<div class="picker-tap">
+											<div class="picker-tab-int1">
+												<div class="picker-tab-header">国际</div>
+												<div class="picker-tab-item picker-tab-item-clicked">TOP20</div>
+												<div class="picker-tab-item">美洲</div>
+												<div class="picker-tab-item">欧洲</div>
+												<div class="picker-tab-item">亚洲-大洋洲</div>
+												<div class="picker-tab-item">非洲</div>
+											</div>
+											<div class="city-body">
+												<div class="city-item">曼谷</div>
+												<div class="city-item">香港</div>
+												<div class="city-item">东京</div>
+												<div class="city-item">首尔</div>
+												<div class="city-item">台北</div>
+												<div class="city-item">新加坡</div>
+												<div class="city-item">吉隆坡</div>
+												<div class="city-item">澳门</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<img src="img/ticket1.png" class="change-ico"/>
+						<div class="end-city city">
+							<span class="ticket-city-text">到达城市</span>
+							<div style="outline: none;">
+								<div class="picker-input">
+									<img src="img/ticket4.png" class="picker-input-ico"/>
+									请选择到达城市
+								</div>
+								<div class="picker-body" style="display: none;"> 
+									<div class="picker-hint">
+										<span class="picker-hint-title">热门城市</span>
+									</div>
+									<div class="picker-content">
+										<div class="picker-tap">
+											<div class="picker-tab-int1">
+												<div class="picker-tab-header">国内</div>
+												<div class="picker-tab-item picker-tab-item-clicked">热门城市</div>
+												<div class="picker-tab-item">ABCDE</div>
+												<div class="picker-tab-item">FGHJ</div>
+												<div class="picker-tab-item">KLMNP</div>
+												<div class="picker-tab-item">QRSTW</div>
+												<div class="picker-tab-item">XYZ</div>
+											</div>
+											<div class="city-body">
+												<div class="city-item">北京</div>
+												<div class="city-item">上海</div>
+												<div class="city-item">广州</div>
+												<div class="city-item">深圳</div>
+												<div class="city-item">昆明</div>
+												<div class="city-item">成都</div>
+												<div class="city-item">西安</div>
+												<div class="city-item">重庆</div>
+											</div>
+										</div>
+									</div>
+									<div class="picker-content">
+										<div class="picker-tap">
+											<div class="picker-tab-int1">
+												<div class="picker-tab-header">国际</div>
+												<div class="picker-tab-item picker-tab-item-clicked">TOP20</div>
+												<div class="picker-tab-item">美洲</div>
+												<div class="picker-tab-item">欧洲</div>
+												<div class="picker-tab-item">亚洲-大洋洲</div>
+												<div class="picker-tab-item">非洲</div>
+											</div>
+											<div class="city-body">
+												<div class="city-item">曼谷</div>
+												<div class="city-item">香港</div>
+												<div class="city-item">东京</div>
+												<div class="city-item">首尔</div>
+												<div class="city-item">台北</div>
+												<div class="city-item">新加坡</div>
+												<div class="city-item">吉隆坡</div>
+												<div class="city-item">澳门</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ticket-time">
+						<div class="header-picker-month">
+							<div class="picker-month">
+								<div class="header-picker-month-text">出发时间</div>
+								<div class="month-selector">
+									<div class="val">
+										<img src="img/ticket5.png" alt="月" style="margin-right: 7px;"/>
+										<span>全年</span>
+									</div>
+									<div class="popup" style="display: none;">
+										<h5>请选择月份</h5>
+										<ul>
+											<li class="item-nolimit">全年</li>
+											<li class="disabled">1月</li>
+											<li class="disabled">2月</li>
+											<li class="disabled">3月</li>
+											<li class="disabled">4月</li>
+											<li class="disabled">5月</li>
+											<li class="disabled">6月</li>
+											<li class="disabled">7月</li>
+											<li>8月</li>
+											<li>9月</li>
+											<li>10月</li>
+											<li>11月</li>
+											<li>12月</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="header-serch-button">
+								<button>搜索全部低价</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ticket-discount">
+				<div class="discount-radio">
+					<strong>优选目的地</strong>
+					<div class="radio">
+						<input type="radio" value="1" name="discountFlightType"/>
+						往返
+						<input type="radio" value="2" name="discountFlightType"/>
+						单程
+					</div>
+				</div>
+				<div class="discount-tab">
+					<div class="discount-tab-item discount-tab-item-clicked">东南亚</div>
+					<div class="discount-tab-item">免签落地签</div>
+					<div class="discount-tab-item">港澳台</div>
+					<div class="discount-tab-item">第一次出国</div>
+				</div>
+				<table class="discount-list">
+					<tr>
+						<td class="discount-list-item">
+							<div class="discount-list-item-place">
+								<div>北京</div>
+								<div>
+									<div style="position: relative; top: -3px;">
+										<img src="img/ticket6.svg" width="73" color="#999" class="double-way-first"/>
+										<img src="img/ticket7.svg" width="73" color="#999" class="double-way-reverse"/>
+									</div>
+									
+								</div>
+								<div>吉隆坡</div>
+							</div>
+							<div class="discount-list-item-date">2017-9-22</div>
+							<div class="discount-list-item-price">
+								<i class="money" style="font-size: 10px;">￥</i>
+								<span style="font-size: 19px;">612</span>
+							</div>
+						</td>
+						
+						
+						<td class="discount-list-item">
+							<div class="discount-list-item-place">
+								<div>北京</div>
+								<div>
+									<div style="position: relative; top: -3px;">
+										<img src="img/ticket6.svg" width="73" color="#999" class="double-way-first"/>
+										<img src="img/ticket7.svg" width="73" color="#999" class="double-way-reverse"/>
+									</div>
+									
+								</div>
+								<div>吉隆坡</div>
+							</div>
+							<div class="discount-list-item-date">2017-9-22</div>
+							<div class="discount-list-item-price">
+								<i class="money" style="font-size: 10px;">￥</i>
+								<span style="font-size: 19px;">612</span>
+							</div>
+						</td>
+						<td class="discount-list-item">
+							<div class="discount-list-item-place">
+								<div>北京</div>
+								<div>
+									<div style="position: relative; top: -3px;">
+										<img src="img/ticket6.svg" width="73" color="#999" class="double-way-first"/>
+										<img src="img/ticket7.svg" width="73" color="#999" class="double-way-reverse"/>
+									</div>
+									
+								</div>
+								<div>吉隆坡</div>
+							</div>
+							<div class="discount-list-item-date">2017-9-22</div>
+							<div class="discount-list-item-price">
+								<i class="money" style="font-size: 10px;">￥</i>
+								<span style="font-size: 19px;">612</span>
+							</div>
+						</td>
+						<td class="discount-list-item">
+							<div class="discount-list-item-place">
+								<div>北京</div>
+								<div>
+									<div style="position: relative; top: -3px;">
+										<img src="img/ticket6.svg" width="73" color="#999" class="double-way-first"/>
+										<img src="img/ticket7.svg" width="73" color="#999" class="double-way-reverse"/>
+									</div>
+									
+								</div>
+								<div>吉隆坡</div>
+							</div>
+							<div class="discount-list-item-date">2017-9-22</div>
+							<div class="discount-list-item-price">
+								<i class="money" style="font-size: 10px;">￥</i>
+								<span style="font-size: 19px;">612</span>
+							</div>
+						</td>
+						
+					</tr>
+				</table>
+			</div>
+		</div>
+
+
+
+		<!--电梯-->
+		<div class="elevator2 col-lg-1">
+			<a id="elevator2_top"></a>
+		</div>
+
+
+		<footer></footer>
+	</body>
+
+</html>

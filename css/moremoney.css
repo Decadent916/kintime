@@ -1,0 +1,386 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul, ol{
+	list-style: none;
+}
+body{
+	font-size: 12px;
+	line-height: 1.5;
+	font-weight: normal;
+	background-color: #eee;
+}
+.navbar{
+	margin-bottom: 0;
+}
+.k-banner{
+	background: url(../img/moremoney0.jpg) no-repeat center;
+	padding-top: 42px;
+	color: #fff;
+}
+.k-banner-content{
+	margin: 0 auto 12px;
+	clear: both;
+}
+.k-banner-portrait{
+	display: inline-block;
+	float: left;
+	width: 86px;
+}
+.user-portrait{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid #e1e1e1;
+	display: block;
+}
+.user-portrait img{
+	width: 80px;
+	height: 80px;
+}
+.k-banner-main{
+	display: inline;
+}
+.k-banner-main-hello{
+	padding: 26px 0 10px 20px;
+	clear: both;
+}
+.username{
+	font-size: 16px;
+	line-height: 16px;
+	display: inline;
+}
+.username a{
+	color: #fff;
+}
+.username a:hover{
+	text-decoration: underline;
+}
+.notice{
+	margin-left: 10px;
+	display: inline;
+}
+.notice a{
+	color: #fff;
+}
+.notice a:hover{
+	text-decoration: underline;
+}
+.k-banner-main-detial{
+	padding: 12px 0 0 20px;
+}
+.useraccount{
+	margin-right: 10px;
+	display: inline;
+	float: left;
+}
+.useraccount a{
+	color: #fff;
+}
+.useraccount a:hover{
+	text-decoration: underline;
+}
+.k-banner-stat{
+	margin-left: 5px;
+	display: inline;
+	list-style: none;
+}
+.k-banner-stat li{
+	float: left;
+}
+.icon{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	background-image: url(../img/public5.png);
+}
+.k-banner-stat-certify .icon{
+	background-position: -416px -281px;
+}
+.k-banner-stat-mobile .icon{
+	background-position: -554px -281px;
+}
+.k-banner-stat-lasttime{
+	display: inline;
+}
+.fn-clear{
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+
+
+/*资产*/
+.k-assets{
+	position: relative;
+	padding-top: 15px;
+}
+.k-assets-table{
+	background: #fff;
+	border-collapse: collapse;
+	width: 100%;
+}
+.k-assets-table td{
+	border: 1px solid #e1e1e1;
+	vertical-align: top;
+}
+.k-assets-balance,.k-assets-mfund{
+	width: 50%;
+}
+.k-assets-balance .wrap,.k-assets-mfund .wrap{
+	position: relative;
+	height: 133px;
+}
+.k-assets-container{
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.k-assets-content{
+	margin: 30px 20px;
+}
+.k-assets-header{
+	margin-bottom: 15px;
+	line-height: 16px;
+}
+.k-assets-header h3{
+	font-size: 14px;
+	display: inline;
+	margin: 0;
+}
+.k-assets-balance-amount,.k-assets-mfund-amount{
+	line-height: 24px;
+	margin-right: 20px;
+	display: inline;
+	float: left;
+}
+.amount{
+	font-size: 24px;
+	font-weight: 400;
+	color: #666;
+	margin-left: 2px;
+}
+.fen{
+	font-size: 18px;
+	
+}
+.k-assets-balance-actions,.k-assets-mfund-actions{
+	float: left;
+}
+.k-assets-balance-actions li,.k-assets-mfund-actions li{
+	display: list-item;
+	float: left;
+	margin-right: 7px;
+	height: 25px;
+}
+.ui-btn{
+	display: inline-block;
+	color: #777;
+	line-height: 22px;
+	height: 22px;
+	border: 1px solid #afafaf;
+	background-color: #f3f3f3;
+	padding: 0 9px;
+	border-radius: 4px;
+}
+.ui-btn:hover{
+	color: #676d70;
+	border: 1px solid #8e8e8e;
+	background-color: #fcfbfb;
+}
+.k-assets-visible-icon{
+	background-image: url(../img/public5.png);
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 14px;
+	height: 10px;
+	background-position: -621px -262px;
+}
+.k-assets-visible-icon:hover{
+	background-position: -149px -298px;
+}
+.k-assets-visible-icon.main{
+	background-position: -622px -281px;
+}
+.k-assets-visible-icon.main:hover{
+	background-position: -134px -298px;
+}
+.k-assets-pcredit{
+	position: relative;
+}
+.k-assets-pcredit .wrap{
+	position: static;
+}
+.icon-ask{
+	display: inline-block;
+	background-position: -450px -281px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	float: right;
+	background-image: url(../img/public5.png);
+}
+.ft-gray{
+	color: #a1a1a1!important;
+	display: block;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 6px;
+}
+.k-assets-body{
+	margin-bottom: 20px;
+}
+.k-assets-foot{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+.k-assets-finance .wrap{
+	position: relative;
+}
+.money-rate{
+	height: 22px;
+	margin: 6px 0;
+	color: #fb7823!important;
+	line-height: 22px;
+}
+.money-rate p{
+	display: block;
+	font-size: 24px;
+	float: left;
+	margin: 0;
+}
+.per{
+	font-size: 18px;
+}
+.k-assets-other .wrap{
+	position: relative;
+}
+.ui-btn-orange{
+	background-color: #f57403;
+	border: 1px solid #d66500;
+	padding: 0 12px;
+	font-size: 12px;
+	height: 22px;
+	line-height: 22px;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	border-radius: 4px;
+}
+.ui-btn-orange:hover{
+	background-color: #fb8318;
+	color: #fff;
+}
+
+
+/*交易记录*/
+.k-trend{
+	margin-top: 15px;
+	position: relative;
+	background-color: #fff;
+}
+.k-trend-header{
+	height: 40px;
+	background-color: #f5f5f5;
+	border: 1px solid #e1e1e1;
+	border-bottom: 0;
+}
+.k-trend-header span{
+	color: #666;
+	font-size: 14px;
+	background-color: #e3e3e3;
+	line-height: 36px;
+	padding: 0 25px;
+	display: inline-block;
+	margin: 2px;
+	cursor: pointer;
+	position: relative;
+}
+.k-trend-header span i{
+	position: absolute;
+	display: inline-block;
+	bottom: 0;
+	left: 45%;
+	width: 16px;
+	height: 4px;
+	background-image: url(../img/public5.png);
+	background-position: -300px -252px;
+}
+.k-trend-recent{
+	border: 1px solid #e1e1e1;
+}
+.k-trend-recent-title{
+	border-bottom: 1px solid #ccc;
+	position: relative;
+	padding: 12px 24px 12px 25px;
+}
+.trend-select{
+	position: absolute;
+	top: 3px;
+	right: 3px;
+}
+.table>tbody>tr>td{
+	padding: 10px 0;
+}
+table>tbody>tr>.k-trend-time{
+	padding-left:27px;
+}
+.k-trend-name a{
+	color: #4d4d4d;
+}
+.k-trend-name a:hover{
+	color: #08c;
+	text-decoration: underline;
+}
+.k-trend-memo a{
+	display: inline-block;
+	width: 14px;
+	height: 16px;
+	background-image: url(../img/public6.png);
+	background-position: 2px -310px;
+}
+.k-trend-memo a:hover{
+	background-position: 2px -342px;
+}
+.k-trend-amount{
+	text-align: right;
+}
+table>tbody>tr>.k-trend-detail{
+	padding-left: 10px;
+}
+.k-trend-detail a{
+	width: 14px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	background-image: url(../img/public6.png);
+	background-position: 0 -74px;
+	background-repeat: no-repeat;
+}
+.k-trend-detail a:hover{
+	background-position: 0 -102px;
+}
+.k-trend-recent-footer{
+	padding: 12px 24px 12px 25px;
+	background-color: #f5f5f5;
+}
+.k-trend-more{
+	float: right;
+}

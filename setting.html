@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/setting.css" />
+		<link rel="stylesheet" href="css/address.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/address.js" ></script>
+		<script type="text/javascript" src="js/setting.js" ></script>
+	</head>
+	<body>
+		<div style="overflow: hidden;border: 1px solid #eee;width: 900px;">
+			<div class="avatar-container">
+				<h3>亲爱的Decadent.F，来上传一张头像吧</h3>
+				<div><img src="img/setting0.png"/></div>
+				<div class="upload-avatar">
+					<input type="button" value="上传头像"/>
+					<input type="file" style="width: 0;height: 0;" accept="image/*"/>
+				</div>
+				<div class="avatar-tips">支持JPG，JPEG，GIF，PNG，BMP，<br>且小于5M</div>
+			</div>
+			<div class="userinfo">
+				<div class="basicinfo">
+					<div class="userinfo-section">
+						<label>手机号：</label>
+						<div class="text">188****2733</div>
+						<div class="inline-link"><a href="#">更换</a></div>
+					</div>
+					<div class="userinfo-section">
+						<label>邮　箱：</label>
+						<div class="text">尚未绑定任何邮箱</div>
+						<div class="inline-link"><a href="#">立即绑定</a></div>
+					</div>
+					<div class="userinfo-section">
+						<label>用户名：</label>
+						<div class="text">Decadent.F</div>
+						<div class="inline-link"><a href="#">修改</a></div>
+					</div>
+					<div class="userinfo-section">
+						<label>密　码：</label>
+						<div class="text">••••••</div>
+						<div class="inline-link"><a href="#">修改</a></div>
+					</div>
+				</div>
+				<div class="extrainfo">
+					<div class="userinfo-section">
+						<label>性别：</label>
+						<div class="radio-inline">
+							<input type="radio" name="sex"/><span class="radioinfo">男</span>
+						</div>
+						<div class="radio-inline">
+							<input type="radio" name="sex"/><span class="radioinfo">女</span>
+						</div>
+					</div>
+					<div class="userinfo-section">
+						<label>生日：</label>
+						<span>
+							<input type="date" />
+						</span>
+					</div>
+					<div class="userinfo-section">
+						<label>身份：</label>
+						<div class="radio-inline">
+							<input type="radio" name="identity"/><span class="radioinfo">学生</span>
+						</div>
+						<div class="radio-inline">
+							<input type="radio" name="identity"/><span class="radioinfo">在职</span>
+						</div>
+						<div class="radio-inline">
+							<input type="radio" name="identity"/><span class="radioinfo">自由职业</span>
+						</div>
+						<div class="radio-inline">
+							<input type="radio" name="identity"/><span class="radioinfo">其他</span>
+						</div>
+					</div>
+					<div class="userinfo-section">
+						<label>个人情况：</label>
+						<div class="radio-inline">
+							<input type="radio" name="merriage"/><span class="radioinfo">单身</span>
+						</div>
+						<div class="radio-inline">
+							<input type="radio" name="merriage"/><span class="radioinfo">恋爱中</span>
+						</div>
+						<div class="radio-inline">
+							<input type="radio" name="merriage"/><span class="radioinfo">已婚</span>
+						</div>
+						<div class="radio-inline">
+							<input type="radio" name="merriage"/><span class="radioinfo">保密	</span>
+						</div>
+					</div>
+					<div class="userinfo-section">
+						<label>兴趣：</label>
+						<div class="checkbox-inline">
+							<input type="checkbox"/>美食
+						</div>
+						<div class="checkbox-inline">
+							<input type="checkbox"/>酒店
+						</div>
+						<div class="checkbox-inline">
+							<input type="checkbox"/>娱乐
+						</div>
+						<div class="checkbox-inline">
+							<input type="checkbox"/>购物
+						</div>
+						<div class="checkbox-inline">
+							<input type="checkbox"/>培训
+						</div>
+						<div class="checkbox-inline">
+							<input type="checkbox"/>机票
+						</div>
+						<div class="checkbox-inline">
+							<input type="checkbox"/>外卖
+						</div>
+						<div class="checkbox-inline">
+							<input type="checkbox"/>理财
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="addressinfo">
+				<h3 class="addresstitle">收货地址管理</h3>
+				<table class="table-responsive table">
+					<tbody>
+						<tr class="active">
+							<th>收货人</th>
+							<th>地址/邮编</th>
+							<th>电话/手机</th>
+							<th>操作</th>
+						</tr>
+						<tr class="active">
+							<td>王习习</td>
+							<td>浙江 杭州市 下城区 环西新村10幢601，310000</td>
+							<td>188****2733</td>
+							<td>
+								<a href="#">设为默认</a>
+								<a href="#">删除</a>
+								<a href="#">修改</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="addaddress">
+					<div class="addressform">
+						<label><em>*</em>所在地区</label>
+						<input id="citySelect"  type="text"  class="city_input" readonly="readonly" placeholder="所在地区">
+					</div>
+					<div class="addressform addressform1">
+						<label><em>*</em>街道地址</label>
+						<input id="street" type="text" placeholder="街道地址"/>
+						<span class="inlinetip" style="display: none;">请填写街道地址，最少5个字，最多不能超过60个字，不能全部为数字</span>
+					</div>
+					<div class="addressform addressform1">
+						<label><em>*</em>邮政编码</label>
+						<input id="zipcode" type="text" placeholder="邮政编码"/>
+						<span class="inlinetip" style="display: none;">邮政编码填写有误，请输入6位邮政编码</span>
+					</div>
+					<div class="addressform addressform1">
+						<label><em>*</em>收货人姓名</label>
+						<input id="name" type="text" placeholder="收货人姓名"/>
+						<span class="inlinetip" style="display: none;">请正确填写姓名，最少不能低于2个字，最多不能超过15个字</span>
+					</div>
+					<div class="addressform addressform1">
+						<label><em>*</em>电话号码</label>
+						<input id="phone" type="text" placeholder="电话号码"/>
+						<span class="inlinetip" style="display: none;">请填写正确的电话号码或手机号</span>
+					</div>
+					<div class="addressform">
+						<input type="button" value="保存" id="savebtn" onclick="saveValue()"/>
+						<a href="javascript:void(0)" id="address-cancel">取消</a>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+			</div>
+		</div>
+		<script>
+			$(function(){
+				init_city_select($("#citySelect"));
+				
+			});
+		</script>
+	</body>
+</html>
